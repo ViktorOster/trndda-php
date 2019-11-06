@@ -87,7 +87,8 @@
                         time. Using our simple interface, it is easy to extract tables from both online and offline data
                         sources. 
                         <br>
-                        <a href="">Watch a tutorial.</a>
+                        <!-- <a class="show-tutorial-video" ref="#">Watch a tutorial.</a> -->
+                        <a href="https://www.youtube.com/watch?v=YpeI8dYvJl8" target="_blank" rel="noopener noreferrer">Watch a tutorial.</a>
                     </p>
 
                 </div>
@@ -232,124 +233,135 @@
         </section>
     </main>
     <div class="modal-container">
-            <div class="modal-container-2">
-                    <div class="modal-custom modal-signIn-signUp is-showing">
+        <div class="modal-container-2">
+            <div class="modal-custom modal-signIn-signUp">
 
-                            <div class="modal__top-content-mobile">
-                                <div class="text-right">
-                                    <button class="modal__close">
-                                            X
-                                    </button>
-                                </div>
-                                
-                                <img class="modal__logo" src="./assets/trndda_logo_transparent.png" alt="">
-                                <div class="text-center">
-                                    <button class="modal__signIn-tab">Login</button>
-                                    <button class="modal__signUp-tab is-active">Sign Up</button>
-                                </div>
+                <div class="modal__top-content-mobile">
+                    <div class="text-right">
+                        <button class="modal__close">
+                                X
+                        </button>
+                    </div>
+                    
+                    <img class="modal__logo" src="./assets/trndda_logo_transparent.png" alt="">
+                    <div class="text-center">
+                        <button class="modal__signIn-tab">Login</button>
+                        <button class="modal__signUp-tab is-active">Sign Up</button>
+                    </div>
+                </div>
+                
+                <div class="modal__signIn">
+                    <div class="modal__left-content modal__left-content-signIn">
+                        <img src="./assets/trndda_logo_transparent.png" alt="">
+                        <p class="text-bigger">Auto-detect, edit and export tables in 3 clicks.</p>
+                        <p>
+                            Ready to get going?
+                            <br>
+                            Sign in or sign up now!
+                        </p>
+                    </div>
+                    <div class="modal__right-content">
+                        <div class="modal__top-content-desktop">
+                            <div class="text-right">
+                                <button class="modal__close">
+                                        X
+                                </button>
                             </div>
                             
-                            <div class="modal__signIn">
-                                <div class="modal__left-content modal__left-content-signIn">
-                                    <img src="./assets/trndda_logo_transparent.png" alt="">
-                                    <p class="text-bigger">Auto-detect, edit and export tables in 3 clicks.</p>
-                                    <p>
-                                        Ready to get going?
-                                        <br>
-                                        Sign in or sign up now!
-                                    </p>
-                                </div>
-                                <div class="modal__right-content">
-                                    <div class="modal__top-content-desktop">
-                                        <div class="text-right">
-                                            <button class="modal__close">
-                                                    X
-                                            </button>
-                                        </div>
-                                        
-                                        <div class="text-center">
-                                            <button class="modal__signIn-tab">Login</button>
-                                            <button class="modal__signUp-tab is-active">Sign Up</button>
-                                        </div>
-                                    </div>
-                                    <form action="http://www.trndda.com/index.php" action="POST">
-                                        <div class="form-group">
-                                            <label hidden for="">Username</label>
-                                            <input class="form-control" required="true" type="text" name="userName" maxlength="100" placeholder="Username">
-                                        </div>
-                                        <div class="form-group">
-                                            <label hidden for="">Password</label>
-                                            <input class="form-control" required="" type="password" name="password" placeholder="Password">
-                                        </div>
-                                        <div class="text-center">
-                                            <input class="button" type="submit" value="Log In">  
-                                        </div>
-                                        <div class="text-center mt-3 text-small">
-                                            <a href="http://www.trndda.com/forgotpassword.php">Forgot password?</a>
-                                        </div>
-                                    </form>
-                                </div>
-                                
+                            <div class="text-center">
+                                <button class="modal__signIn-tab">Login</button>
+                                <button class="modal__signUp-tab is-active">Sign Up</button>
                             </div>
-                            <div class="modal__signUp is-showing">
-                                <div class="modal__left-content modal__left-content-signUp">
-                                    <img src="./assets/trndda_logo_transparent.png" alt="">
-                                    <p class="text-bigger">Auto-detect, edit and export tables in 3 clicks.</p>
-                                    <p>Sign up for free to start detecting, editing and exporting tables</p>
-                                    <p class="text-small">You accept our <a href="#">Terms and Conditions</a> by creating your account.</p>
-                                </div>
-                                <div class="modal__right-content">
-                                    <div class="modal__top-content-desktop">
-                                        <div class="text-right">
-                                            <button class="modal__close">
-                                                    X
-                                            </button>
-                                        </div>
-                                        
-                                        <div class="text-center">
-                                            <button class="modal__signIn-tab">Login</button>
-                                            <button class="modal__signUp-tab is-active">Sign Up</button>
-                                        </div>
-                                    </div>
-                    
-                                    <form action="POST" action="http://www.trndda.com/signup.php">
-                                        <div class="form-group">
-                                            <label hidden for="">First Name</label>
-                                            <input class="form-control" required="true" type="text" name="firstName" maxlength="100" placeholder="First Name">
-                                        </div>
-                                        <div class="form-group">
-                                            <label hidden for="">Last Name</label>
-                                            <input class="form-control" required="true" type="text" name="lastName" maxlength="100" placeholder="Last Name">
-                                        </div>
-                                        <div class="form-group">
-                                            <label hidden for="">Username</label>
-                                            <input class="form-control" required="true" type="text" name="userName" maxlength="100" placeholder="Username">
-                                        </div>
-                                        <div class="form-group">
-                                            <label hidden for="">Organization</label>
-                                            <input class="form-control" required="true" type="text" name="organization" maxlength="100" placeholder="Organization">
-                                        </div>
-                                        <div class="form-group">
-                                            <label hidden for="">Email</label>
-                                            <input class="form-control" required="true" type="text" name="email" maxlength="100"  placeholder="Email">
-                                        </div>
-                                        <div class="form-group">
-                                            <label hidden for="">Password</label>
-                                            <input class="form-control" required="true" type="password" name="password" maxlength="100" placeholder="Password">
-                                        </div>
-                                        <div class="form-group">
-                                            <label hidden for="">Confirm Password</label>
-                                            <input class="form-control" required="true" type="password" name="confirmPassword" maxlength="100" placeholder="Confirm Password">
-                                        </div>
-                                        <div class="text-center">
-                                            <input class="button" name="login" type="submit" value="Sign Up">
-                                        </div>
-                                        
-                                    </form>
-                                </div>
-                            </div>    
                         </div>
-            </div>          
+                        <form action="http://www.trndda.com/index.php" action="POST">
+                            <div class="form-group">
+                                <label hidden for="">Username</label>
+                                <input class="form-control" required="true" type="text" name="userName" maxlength="100" placeholder="Username">
+                            </div>
+                            <div class="form-group">
+                                <label hidden for="">Password</label>
+                                <input class="form-control" required="" type="password" name="password" placeholder="Password">
+                            </div>
+                            <div class="text-center">
+                                <input class="button" type="submit" value="Log In">  
+                            </div>
+                            <div class="text-center mt-3 text-small">
+                                <a href="http://www.trndda.com/forgotpassword.php">Forgot password?</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="modal__signUp is-showing">
+                    <div class="modal__left-content modal__left-content-signUp">
+                        <img src="./assets/trndda_logo_transparent.png" alt="">
+                        <p class="text-bigger">Auto-detect, edit and export tables in 3 clicks.</p>
+                        <p>Sign up for free to start detecting, editing and exporting tables</p>
+                        <p class="text-small">You accept our <a href="#">Terms and Conditions</a> by creating your account.</p>
+                    </div>
+                    <div class="modal__right-content">
+                        <div class="modal__top-content-desktop">
+                            <div class="text-right">
+                                <button class="modal__close">
+                                        X
+                                </button>
+                            </div>
+                            
+                            <div class="text-center">
+                                <button class="modal__signIn-tab">Login</button>
+                                <button class="modal__signUp-tab is-active">Sign Up</button>
+                            </div>
+                        </div>
+        
+                        <form action="POST" action="http://www.trndda.com/signup.php">
+                            <div class="form-group">
+                                <label hidden for="">First Name</label>
+                                <input class="form-control" required="true" type="text" name="firstName" maxlength="100" placeholder="First Name">
+                            </div>
+                            <div class="form-group">
+                                <label hidden for="">Last Name</label>
+                                <input class="form-control" required="true" type="text" name="lastName" maxlength="100" placeholder="Last Name">
+                            </div>
+                            <div class="form-group">
+                                <label hidden for="">Username</label>
+                                <input class="form-control" required="true" type="text" name="userName" maxlength="100" placeholder="Username">
+                            </div>
+                            <div class="form-group">
+                                <label hidden for="">Organization</label>
+                                <input class="form-control" required="true" type="text" name="organization" maxlength="100" placeholder="Organization">
+                            </div>
+                            <div class="form-group">
+                                <label hidden for="">Email</label>
+                                <input class="form-control" required="true" type="text" name="email" maxlength="100"  placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <label hidden for="">Password</label>
+                                <input class="form-control" required="true" type="password" name="password" maxlength="100" placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                                <label hidden for="">Confirm Password</label>
+                                <input class="form-control" required="true" type="password" name="confirmPassword" maxlength="100" placeholder="Confirm Password">
+                            </div>
+                            <div class="text-center">
+                                <input class="button" name="login" type="submit" value="Sign Up">
+                            </div>
+                            
+                        </form>
+                    </div>
+                </div>    
+            </div>
+        </div>          
+    </div>
+
+    <div class="modal-tutorial-video-container">
+        <div class="modal-tutorial-video">
+            <div class="text-right">
+                <button class="modal-tutorial-video__close">
+                        X
+                </button>
+            </div>
+            <video class="tutorial-video video-browse is-showing" autoplay=true loop=true src="./assets/tutorial_browse.mp4"></video>
+        </div>
     </div>
    
     <div class="dark-overlay">

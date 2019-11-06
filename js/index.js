@@ -184,18 +184,44 @@ showModalButtons.forEach(btn => {
     })
     
 })
+const modalTutorialVideo = document.querySelector(".modal-tutorial-video")
+const showTutorialVideoModal = document.querySelector(".show-tutorial-video")
+const tutorialVideoClose = document.querySelector(".modal-tutorial-video__close")
+
+tutorialVideoClose.addEventListener("click", () => {
+    modalTutorialVideo.classList.remove("is-showing")
+    darkOverlay.classList.remove("is-showing")
+})
+
+showTutorialVideoModal.addEventListener("click", () => {
+    if(!darkOverlay.classList.contains("is-showing")) darkOverlay.classList += " is-showing"
+    
+    if(!modalTutorialVideo.classList.contains("is-showing")) modalTutorialVideo.classList += " is-showing"
+})
+
 const modalContainer = document.querySelector(".modal-container-2")
 modalContainer.addEventListener("click", (e) => {
     //close modal if clicked outside form 
     let clickedOnForm = false;
+    let clickedOnVideoModal = false;
     e.path.forEach(elem => {
         if(elem.classList && elem.classList.contains("modal-signIn-signUp")) {
           clickedOnForm = true;
         } 
         
     })
+    e.path.forEach(elem => {
+        if(elem.classList && elem.classList.contains("modal-tutorial-video")) {
+          clickedOnVideoModal = true;
+        } 
+        
+    })
     if(!clickedOnForm) {
         modalSignInSignUp.classList.remove("is-showing")
+        darkOverlay.classList.remove("is-showing")
+    }
+    if(!clickedOnVideoModal) {
+        modalTutorialVideo.classList.remove("is-showing")
         darkOverlay.classList.remove("is-showing")
     }
 })
