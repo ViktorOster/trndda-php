@@ -25,7 +25,9 @@ section h2 {
         padding: 3rem 0;
     }
 }
-
+.c-blue {
+    color: #337ab7;
+}
 a {
     color: initial;
     cursor: pointer;
@@ -36,6 +38,9 @@ a {
 }
 .text-small {
     font-size: 0.75rem;
+}
+.text-medium-small {
+    font-size: 0.88rem;
 }
 form .button {
     padding: 6px 30px;
@@ -397,13 +402,13 @@ button {
     background-repeat: no-repeat;
 }
 .video-browse {
-    background: url("../assets/tutorial_browse-2.gif");
+    background: url("../assets/tutorial_browse.gif");
 }
 .video-edit {
-    background: url("../assets/tutorial_edit-2.gif");
+    background: url("../assets/tutorial_edit.gif");
 }
 .video-save {
-    background: url("../assets/tutorial_save-2.gif");
+    background: url("../assets/tutorial_save.gif");
 }
 .tutorial .laptop .tutorial-video.is-showing {
     opacity: 1;
