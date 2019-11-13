@@ -4,18 +4,33 @@ html, body {
     font-size: 16px;
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-
+@media only screen and (max-width: 995px) {
+    html, body {
+        font-size: 14px;
+    }
+}
 section {
-    padding: 4rem 0;
+    padding: 2.5rem 0;
 }
 section h2 {
-    padding: 1.5rem 0;
-}a {
+    padding: 1.5rem 0 1.5rem 0;
+    font-weight: bold;
+    font-size: 1.85rem;
+    margin: 0;
+}
+@media only screen and (min-width: 1600px) {
+    section {
+        padding: 3rem 0;
+    }
+}
+
+a {
     color: initial;
     cursor: pointer;
 }
+
 * {
     box-sizing: border-box;
 }
@@ -68,6 +83,7 @@ form .button {
     background: #034236;
     border-bottom: 1px solid rgba(255, 255, 255, 0.274);
 }
+
 
 .navbar-mobile.is-scrolling {
     top: 0;
@@ -130,7 +146,7 @@ form .button {
     opacity: 1;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 995px) {
     .navbar {
         display: none;
     }
@@ -138,12 +154,17 @@ form .button {
     .navbar-mobile {
         display: block;
     }
+    .link-signup {
+        background: none !important;
+        color: green;
+    }
 }
 
 .navbar__logo {
     font-size: 1.35rem;
     text-align: left;
     color: white;
+    margin-top: -10px;
 }
 
 .navbar ul {
@@ -162,29 +183,35 @@ form .button {
 }
 
 .navbar ul>li:hover {
-    color: rgba(211, 211, 211, 0.753);
+    color: rgba(255, 255, 255, 0.822);
 }
-.link-login {
+.button.link-login {
     border: 1px solid white;
-    padding: 6px 16px !important;
-    margin-right: 4px !important;
-    border-radius: 3px;
+    padding: 6px 16px;
+    border-radius: 4px;
     transition: all 0.3s;
+    background: none;
+    font-size: 1rem;
+    font-weight: 400;
 }
-.link-login:hover {
+.button.link-login:hover {
     background: white;
-    color: black !important;
+    color: black;
+    box-shadow: none;
 }
-.link-signup {
-    margin-left: 4px !important;
+.button.link-signup {
+    margin-left: 2rem;
     background: #5CB85C;
-    padding: 6px 16px !important;
-    border-radius: 3px;
+    padding: 6px 16px;
+    border-radius: 4px;
     transition: all 0.3s;
+    font-size: 1rem;
+    font-weight: 400;
 }
-.link-signup:hover {
-    color: white !important;
-    background: rgb(64, 145, 64);
+.button.link-signup:hover {
+    color: white;
+    background: rgb(73, 161, 73);
+    box-shadow: none;
 }
 /* end navbar */
 button {
@@ -195,63 +222,142 @@ button {
     border: 0;
     background: #5CB85C;
     color: white;
-    font-weight: 700;
-    padding: 0.6rem 1.7rem;
-    border-radius: 4px;
+    padding: 0.7rem 1.25rem;
+    border-radius: 6px;
     font-size: 1.125rem;
-    transition: all 0.3s;
+    transition: all 0.2s;
     cursor: pointer;
 }
-.button:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24);
-    background: rgb(47, 126, 47);
+.button.button-small {
+    padding: 6px 21px !important;
+    font-weight: 400;
 }
+.button:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    background: rgb(72, 172, 72);
+}
+
 .hero {
-    padding-top: 80px;
+    padding-top: calc(70px + 2.5rem);
     text-align: center;
     padding-bottom: 0;
-    height: 100vh;
     position: relative;
     overflow: hidden;
 }
-.hero .text-container {
-    height: 40vh;
-}
+
 .hero p {
     max-width: 800px;
-    margin: 0 auto 2rem auto;
+    margin: 0 auto 1.5rem auto;
 }
 .hero h1 {
     font-weight: 700;
-    padding: 1.5rem 0 1rem 0;
+    padding: 1.5rem 0 1.5rem 0;
     color: #034236;
     font-size: 1.85rem;
+    margin: 0;
 }
 .hero img {
     pointer-events: none;
-    margin-top: -5vh;
     object-fit: contain;
-    height: 60vh;
+    width: 810px;
 }
+
 .hero button {
     margin-left: 1rem;
 }
 .tryforfree {
     font-weight: bold;
-    color: #034236;
-    font-size: 1.25rem;
+    color: #008000;
+    font-size: 1.5rem;
     display: inline-block;
+    margin: 0 !important;
 }
-.tutorial a {
-    color: #5CB85C !important;
+.file-extension-dummy {
+    visibility: hidden;
+    font-size: 2.2rem;
 }
-.tutorial a:hover {
-    text-decoration: underline !important;
+.file-extension {
+    font-size: 2.2rem;
+    color: #5CB85C;
+    position: absolute;
+    transform: translateY(0rem);
 }
+.file-extension.swap-in {
+    animation-name: swap-in;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+.file-extension.swap-out {
+    animation-name: swap-out;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+/* Safari 4.0 - 8.0 */
+/* @-webkit-keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+} */
+  
+/* Standard syntax */
+@keyframes swap-in {
+    from {
+        opacity: 0;
+        /* transform: translateY(-1.5rem) */
+    }
+    to {
+        opacity: 1;
+        /* transform: translateY(0rem) */
+    }
+}
+@keyframes swap-out {
+    from {
+        opacity: 1;
+        /* transform: translateY(0rem) */
+    }
+    to {
+        opacity: 0;
+        /* transform: translateY(1.5rem) */
+    }
+}
+
+@media screen and (min-height: 850px){
+    .hero img {
+        margin-top: 2rem;
+        width: 980px;
+    }
+}
+@media screen and (max-height: 680px){
+    .hero img {
+        width: 700px;
+    }
+}
+@media screen and (max-width: 1000px) and (min-width: 600px){
+    .hero img {
+        width: 100%;
+        height: auto;
+    }
+}
+@media screen and (max-width: 600px) {
+    .hero img {
+        margin-left: -10%;
+        width: 120%;
+    }
+    .hero {
+        padding-top: 100px;
+    }
+    .hero img {
+        margin-top: 2rem;
+    }
+}
+
+.tutorial {
+    background: #F7FFF7;
+    position: relative;
+}
+
 .tutorial__text {
     max-width: 780px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto 0 auto;
 }
 .tutorial .container-wide {
     display: flex;
@@ -261,13 +367,15 @@ button {
     padding-right: 12px;
     margin-left: auto;
     margin-right: auto;
+    justify-content: center;
 }
 .tutorial .laptop {
+    pointer-events: none;
+    width: 100%;
     padding: 10px;
     position: relative;
-    margin: auto;
-    width: 100%;
     height: calc(100vw/2);
+    margin: 30px auto 8px auto;
 }
 .tutorial .laptop-img {
     position: absolute;
@@ -276,22 +384,41 @@ button {
     width: 100%;
     z-index: 1;
 }
-.tutorial .laptop video {   
+.tutorial .laptop .tutorial-video {   
     position: absolute;
     z-index: 2;
-    
     height: 95%; 
-    top: -4%;
-    display: none;
+    top: 6%;
+    opacity: 0;
     width: 80%;
     left: 10%;
     margin: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
-.tutorial .laptop video.is-showing {
-    display: block;
+.video-browse {
+    background: url("../assets/tutorial_browse-2.gif");
+}
+.video-edit {
+    background: url("../assets/tutorial_edit-2.gif");
+}
+.video-save {
+    background: url("../assets/tutorial_save-2.gif");
+}
+.tutorial .laptop .tutorial-video.is-showing {
+    opacity: 1;
 }
 .tutorial .explanation {
-    margin-bottom: 3rem;
+
+}
+/* .watchTutorialLink {
+    color: #5CB85C;
+    font-size: 1.2rem;
+    margin-top: 0.5rem !important;
+    display: block;
+} */
+.watchTutorialLink:hover {
+    color: rgb(70, 155, 70);
 }
 
 .dots {
@@ -312,27 +439,31 @@ button {
     background: green;
 }
 .steps-container {
-    width: 80%;
     display: none;
     margin-top: auto;
     margin-bottom: auto;
-    margin-left: auto;
-    margin-right: 3rem;
+
 }
 .step {
-    margin: 15px;
-    margin-left: auto;
+    margin: 25px 15px 15px 25px;
     max-width: 350px;
-    border: 1px solid teal;
+    border: 1px solid #157F3F;
     cursor: pointer;
     transition: all 0.3s;
     padding: 0.5rem 1rem;
 }
-.step:hover {
-    background: green;
+.step.is-active {
+    border: 0;
+    background: #157F3F;
     max-width: 370px;
     color: white;
 }
+/* .step:hover {
+    border: 0;
+    background: #034236;
+    max-width: 370px;
+    color: white;
+} */
 .step-mobile {
     display: none;
     text-align: center;
@@ -349,11 +480,79 @@ button {
     color: green;
     margin-bottom: 1rem;
 }
-@media screen and (min-width: 1100px) {
+
+.tutorial-lines {
+    position: absolute;
+}
+.tutorial-lines-container {
+    display: none;
+}
+.tutorial-lines-md {
+    top: 46%; 
+}
+.tutorial-lines-lg {
+    top: 47.5%;
+}
+
+/* tutorial steps on large desktop */
+@media screen and (min-width: 1620px) {
+    .tutorial-lines-container-lg {
+        display: block;
+    }
+    .dots {
+        display: none;
+    }
+    .steps-container-mobile {
+        display: none;
+    }
+    .steps-container {
+        width: 400px;
+    }
+    .step {
+        margin-right: 0;
+        margin-left: auto;
+        width: 350px;
+    }
+    .step.is-active {
+        width: 370px;
+    }
+    .tutorial .laptop {
+        height: 650px;
+        width: 1100px;
+        margin-top: 40px;
+    }
+    .tutorial .laptop .tutorial-video {   
+        top: 5.5%;
+
+    }  
+}
+/* tutorial steps on laptop size screen */
+@media screen and (min-width: 1300px) and (max-width: 1620px) {
+    .tutorial-lines-container-md {
+        display: block;
+    }
+    .steps-container {
+        width: 340px;
+    }
+    .tutorial .laptop {
+        height: 540px;
+        width: 900px;
+        margin: 35px 0 0 20px;
+    }
+    .tutorial .laptop .tutorial-video {   
+        top: 6%;
+    }
+    .step {
+        width: 320px;
+    }
+    .step.is-active {
+        width: 340px;
+    }
+}
+
+@media screen and (min-width: 1300px) {
     .tutorial .container-wide {
         flex-direction: row;
-        margin-top: -10%;
-        margin-bottom: -10%;
     }
    
     .dots {
@@ -365,27 +564,42 @@ button {
     .steps-container {
         display: block;
     }
-    .tutorial .laptop {
-        margin-top: 20%;
-    }
-    .tutorial .laptop video {   
-        top: -23.5%;
+    .step {
+        margin-right: 0;
+        margin-left: auto;
     }
 }
 
+@media screen and (min-width: 1100px) and (max-width: 1300px)  {
+    .tutorial .laptop {
+        width: 1100px;
+        height: 580px;
+    }
+}
 
 .about {
     background: #034236;
     color: white;
-}
-.about img {
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
+    padding-bottom: 0;
 }
 
+.about img {
+    object-fit: contain;
+    height: 100%;
+    bottom: 0;
+}
+.about p {
+    margin-right: 20px;
+    margin-bottom: 4rem;
+    line-height: 150%;
+    text-align: justify;
+}
+
+.contact {
+    padding-bottom: 4rem;
+}
 .contact .container {
-    max-width: 900px;
+    max-width: 700px;
 }
 .contact label {
     display: block;
@@ -393,26 +607,53 @@ button {
 .contact input, textarea {
     width: 100%;
 }
+.contact form .button {
+    margin-top: 1rem;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: 400;
+}
 
 .footer {
     padding-top: 1rem;
     padding-bottom: 1rem;
     background: #034236;
     color: white;
+    font-size: 0.9rem;
 }
 .footer .container {
     display: flex;
     justify-content: space-between;
 }
-.footer a {
-  
-    color: white;
+.footer .social-links {
+    margin-top: 4px;
+}
+.footer .social-links a {
     margin-right: 1rem;
 }
 
 .footer-links {
+    list-style-type: none;
+    padding: 0;
     line-height: 2rem;
     margin: auto;
+}
+.footer a {
+    color: white;
+}
+.footer a:hover {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.87);
+}
+
+.footer-links li {
+    display: inline-block;
+    margin-right: 3rem;
+    color: white;
+    cursor: pointer;
+}
+.footer-links li:hover {
+    color: rgba(255, 255, 255, 0.87);
 }
 .copyright {
     margin: 0.3rem 0 0 0;
@@ -421,10 +662,9 @@ button {
 .copyright-mobile{
     display: none;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 990px) {
     .copyright {
         display: none;
-        
     }
     .copyright-mobile{
         display: block;
@@ -452,17 +692,15 @@ button {
         margin-right: auto !important;
     }
 }
-@media screen and (max-width: 450px) {
-
-    .footer-links a {
+@media screen and (max-width: 770px) {
+    .footer-links li {
         display: block;
     }
 }
 
-
 .social-links img {
-    height: 32px;
-    width: 32px;
+    height: 28px;
+    width: 28px;
 }
 .modal-container {
     display: none;
@@ -491,7 +729,7 @@ button {
     position: relative;
     left: 50%;
     margin-left: -350px;
-    top: calc(100vh / 2 - (450px/ 2));
+    top: calc(100vh / 2 - (450px/ 1.7));
 }
 .modal-signIn-signUp a {
     color: limegreen;
@@ -538,15 +776,38 @@ button {
     background: none;
     color: rgb(49, 49, 49);
 }
-.modal__signIn, .modal__signUp {
+.modal-forgot-password__back {
+    background: none;
+    color: rgb(49, 49, 49);
+    position: absolute;
+}
+.modal-forgot-password__back.modal-forgot-password__back--mobile {
+    left: 0;
+}
+.reset-password-text {
+    margin: 8px 0 4px 0;
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+    opacity: 0.9;
+}
+.reset-password-text-mobile {
+    margin: 8px 0 4px 0;
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+    opacity: 0.9;
     display: none;
 }
-.modal__signIn.is-showing, .modal__signUp.is-showing {
+.modal__signIn, .modal__signUp, .modal__forgot-password {
+    display: none;
+}
+.modal__signIn.is-showing, .modal__signUp.is-showing, .modal__forgot-password.is-showing {
     display: flex;
 }
 .modal__signIn-tab, .modal__signUp-tab {
     background: none;
-    color: rgb(97, 97, 97);
+    color: rgb(173, 173, 173);
     opacity: 0.7;
     text-transform: uppercase;
     margin: 0.25rem 2rem 0 2rem;
@@ -567,6 +828,9 @@ button {
     color: white;
     padding: 1rem;
 }
+.modal-top-content-mobile__tabs {
+    display: none;
+}
 
 .modal__top-content-desktop {
     background: rgb(204, 255, 204);
@@ -584,6 +848,9 @@ button {
 }
 
 @media screen and (max-width: 900px) {
+    .reset-password-text-mobile {
+        display: block;
+    }
     .modal-signIn-signUp {
         width: 100%;
         height: 100%;
