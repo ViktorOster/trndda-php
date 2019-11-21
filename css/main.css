@@ -11,6 +11,14 @@ html, body {
         font-size: 14px;
     }
 }
+.iframe-app-holder {
+    margin-top: 80px;
+    width: 100vw; 
+    height: 100%; 
+    border: none;
+    background:url(../img/30.gif) center center no-repeat;
+}
+
 section {
     padding: 2.5rem 0;
 }
@@ -23,6 +31,34 @@ section h2 {
 @media only screen and (min-width: 1600px) {
     section {
         padding: 3rem 0;
+    }
+}
+.notification {
+    position: fixed;
+    z-index: 20;
+    top: 100px;
+    left: 50%;
+    padding: 1rem;
+    transform: translate(-50%, 0);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    animation-name: notification-show;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    min-width: 730px;
+}
+.notification.hide {
+    animation-name: notification-hide;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+.notification--error {
+    background: #F0DEDE;
+    color: darkred;
+    border-left: 4px solid rgb(184, 132, 132);
+}
+@media only screen and (max-width: 750px) {
+    .notification {
+        min-width: 95%;
     }
 }
 .c-blue {
@@ -141,6 +177,15 @@ form .button {
     border-bottom: 1px solid rgba(255, 255, 255, 0.274);
 }
 
+@media only screen and (max-width: 1200px) {
+    .navbar .container {
+        max-width: 100% !important;
+    }
+    .navbar-mobile .container {
+        max-width: 100% !important;
+    }
+}
+
 .navbar.is-scrolling-down {
     top: -79px;
     opacity: 0;
@@ -149,6 +194,22 @@ form .button {
 .navbar.is-scrolling-up {
     top: 0;
     opacity: 1;
+}
+
+.nav-form-link {
+    display: inline-block;
+}
+.nav-form-link form {
+    padding: 0;
+    margin: 0;
+}
+.nav__login-name {
+    color: rgba(255, 255, 255, 0.801);
+    margin-right: 2rem;
+}
+.navbar-mobile .nav__login-name {
+    color: rgba(0, 0, 0, 0.801);
+    margin-right: 0;
 }
 
 @media only screen and (max-width: 995px) {
@@ -177,7 +238,7 @@ form .button {
     list-style-type: none;
 }
 
-.navbar ul>li {
+.nav-link{
     margin-top: 8px;
     display: inline-block;
     margin-left: 2rem;
@@ -187,9 +248,10 @@ form .button {
     color: white;
 }
 
-.navbar ul>li:hover {
+.nav-link:hover {
     color: rgba(255, 255, 255, 0.822);
 }
+
 .button.link-login {
     border: 1px solid white;
     padding: 6px 16px;
@@ -302,28 +364,7 @@ button {
     from {background-color: red;}
     to {background-color: yellow;}
 } */
-  
-/* Standard syntax */
-@keyframes swap-in {
-    from {
-        opacity: 0;
-        /* transform: translateY(-1.5rem) */
-    }
-    to {
-        opacity: 1;
-        /* transform: translateY(0rem) */
-    }
-}
-@keyframes swap-out {
-    from {
-        opacity: 1;
-        /* transform: translateY(0rem) */
-    }
-    to {
-        opacity: 0;
-        /* transform: translateY(1.5rem) */
-    }
-}
+
 
 @media screen and (min-height: 850px){
     .hero img {
@@ -913,4 +954,49 @@ button {
 }
 .modal-tutorial-video.is-showing {
     display: block;
+}
+  
+/* Standard syntax */
+@keyframes swap-in {
+    from {
+        opacity: 0;
+        /* transform: translateY(-1.5rem) */
+    }
+    to {
+        opacity: 1;
+        /* transform: translateY(0rem) */
+    }
+}
+@keyframes swap-out {
+    from {
+        opacity: 1;
+        /* transform: translateY(0rem) */
+    }
+    to {
+        opacity: 0;
+        /* transform: translateY(1.5rem) */
+    }
+}
+
+@keyframes notification-show {
+    from {
+        opacity: 0;
+        /* transform: translateY(0rem) */
+    }
+    to {
+        opacity: 1;
+        /* transform: translateY(1.5rem) */
+    }
+}
+
+@keyframes notification-hide {
+    from {
+        opacity: 1;
+        /* transform: translateY(0rem) */
+    }
+    to {
+        visibility: hidden;
+        opacity: 0;
+        /* transform: translateY(1.5rem) */
+    }
 }

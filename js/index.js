@@ -46,74 +46,9 @@ window.addEventListener("scroll", () => {
         navbarMobile.classList.remove("is-scrolling")
     }
 })
-
 //END NAVBAR
 
-//tutorial section
-const tutorialVideos = document.querySelectorAll(".tutorial-video")
-const stepsMobile = document.querySelectorAll(".step-mobile")
-const stepsDesktop = document.querySelectorAll(".step")
-const dots = document.querySelectorAll(".dot")
-dots.forEach((dot, i) => {
-    dot.addEventListener("click", () => {
-        for (let j = 0; j < dots.length; j++) {
-            if (j === i) {
-                dots[j].classList += " is-active"
-            } else {
-                dots[j].classList.remove("is-active")
-            }
-        }
-
-        for (let k = 0; k < tutorialVideos.length; k++) {
-            if (k === i) {
-                tutorialVideos[k].classList += " is-showing"
-            } else {
-                tutorialVideos[k].classList.remove("is-showing")
-            }
-        }
-
-        for (let l = 0; l < stepsMobile.length; l++) {
-            if (l === i) {
-                stepsMobile[l].classList += " is-showing"
-            } else {
-                stepsMobile[l].classList.remove("is-showing")
-            }
-        }
-    })
-})
-
-stepsDesktop.forEach((step, i) => {
-    step.addEventListener("mouseover", () => {
-        stepsDesktop.forEach(stepToInActivate => {
-            stepToInActivate.classList.remove("is-active")
-        })
-        if (!step.classList.contains("is-active")) step.classList += " is-active"
-        for (let j = 0; j < dots.length; j++) {
-            if (j === i) {
-                dots[j].classList += " is-active"
-            } else {
-                dots[j].classList.remove("is-active")
-            }
-        }
-
-        for (let k = 0; k < tutorialVideos.length; k++) {
-            if (k === i) {
-                tutorialVideos[k].classList += " is-showing"
-            } else {
-                tutorialVideos[k].classList.remove("is-showing")
-            }
-        }
-
-        for (let l = 0; l < stepsMobile.length; l++) {
-            if (l === i) {
-                stepsMobile[l].classList += " is-showing"
-            } else {
-                stepsMobile[l].classList.remove("is-showing")
-            }
-        }
-    })
-})
-
+//LOGIN/SIGN UP MODAL
 const signInTabs = document.querySelectorAll(".modal__signIn-tab")
 const modalSignInSignUp = document.querySelector(".modal-container")
 const modalSignInContent = document.querySelector(".modal__signIn")
@@ -208,20 +143,6 @@ showModalButtons.forEach(btn => {
     })
 
 })
-// const modalTutorialVideo = document.querySelector(".modal-tutorial-video")
-// const showTutorialVideoModal = document.querySelector(".show-tutorial-video")
-// const tutorialVideoClose = document.querySelector(".modal-tutorial-video__close")
-
-// tutorialVideoClose.addEventListener("click", () => {
-//     modalTutorialVideo.classList.remove("is-showing")
-//     darkOverlay.classList.remove("is-showing")
-// })
-
-// showTutorialVideoModal.addEventListener("click", () => {
-//     if (!darkOverlay.classList.contains("is-showing")) darkOverlay.classList += " is-showing"
-
-//     if (!modalTutorialVideo.classList.contains("is-showing")) modalTutorialVideo.classList += " is-showing"
-// })
 
 const modalContainer = document.querySelector(".modal-container-2")
 modalContainer.addEventListener("click", (e) => {
@@ -234,28 +155,21 @@ modalContainer.addEventListener("click", (e) => {
         }
 
     })
-    // e.path.forEach(elem => {
-    //     if (elem.classList && elem.classList.contains("modal-tutorial-video")) {
-    //         clickedOnVideoModal = true;
-    //     }
-
-    // })
     if (!clickedOnForm) {
         modalSignInSignUp.classList.remove("is-showing")
         darkOverlay.classList.remove("is-showing")
         modalForgotPassword.classList.remove("is-showing")
     }
-    // if (!clickedOnVideoModal) {
-    //     modalTutorialVideo.classList.remove("is-showing")
-    //     darkOverlay.classList.remove("is-showing")
-    // }
 })
+
 function scrollToElement(yPos) {
     window.scrollTo({
         top: yPos,
         behavior: 'smooth'
     })
 }
+
+
 const sectionTutorial = document.querySelector(".tutorial")
 const sectionAbout = document.querySelector(".about")
 const sectionContact = document.querySelector(".footer")
@@ -263,22 +177,117 @@ const sectionContact = document.querySelector(".footer")
 const linksTutorial = document.querySelectorAll("[data-js='tutorial-link']")
 const linksAbout = document.querySelectorAll("[data-js='about-link']")
 const linksContact = document.querySelectorAll("[data-js='contact-link']")
-linksTutorial.forEach(linkTutorial => {
-    linkTutorial.addEventListener("click", () => {
-        scrollToElement(sectionTutorial.offsetTop)
-    })
-})
-linksAbout.forEach(linkAbout => {
-    linkAbout.addEventListener("click", () => {
-        scrollToElement(sectionAbout.offsetTop)
-    })
-})
 
-linksContact.forEach(linkContact => {
-    linkContact.addEventListener("click", () => {
-        scrollToElement(sectionContact.offsetTop)
+//the user is not on the landing page, redirect to index when clicking links in navbar
+if (!sectionTutorial) {
+    linksTutorial.forEach(linkTutorial => {
+        linkTutorial.addEventListener("click", () => {
+            window.location.href = '/';
+        })
     })
-})
+    linksAbout.forEach(linkAbout => {
+        linkAbout.addEventListener("click", () => {
+            window.location.href = '/';
+        })
+    })
+
+    linksContact.forEach(linkContact => {
+        linkContact.addEventListener("click", () => {
+            window.location.href = '/';
+        })
+    })
+}
+//the user is on the landing page, scroll to section position when clicking navbar links
+else {
+    linksTutorial.forEach(linkTutorial => {
+        linkTutorial.addEventListener("click", () => {
+            scrollToElement(sectionTutorial.offsetTop)
+        })
+    })
+    linksAbout.forEach(linkAbout => {
+        linkAbout.addEventListener("click", () => {
+            scrollToElement(sectionAbout.offsetTop)
+        })
+    })
+
+    linksContact.forEach(linkContact => {
+        linkContact.addEventListener("click", () => {
+            scrollToElement(sectionContact.offsetTop)
+        })
+    })
+}
+
+
+//tutorial section
+const tutorialVideos = document.querySelectorAll(".tutorial-video")
+const stepsMobile = document.querySelectorAll(".step-mobile")
+const stepsDesktop = document.querySelectorAll(".step")
+const dots = document.querySelectorAll(".dot")
+
+if (dots) {
+    dots.forEach((dot, i) => {
+        dot.addEventListener("click", () => {
+            for (let j = 0; j < dots.length; j++) {
+                if (j === i) {
+                    dots[j].classList += " is-active"
+                } else {
+                    dots[j].classList.remove("is-active")
+                }
+            }
+
+            for (let k = 0; k < tutorialVideos.length; k++) {
+                if (k === i) {
+                    tutorialVideos[k].classList += " is-showing"
+                } else {
+                    tutorialVideos[k].classList.remove("is-showing")
+                }
+            }
+
+            for (let l = 0; l < stepsMobile.length; l++) {
+                if (l === i) {
+                    stepsMobile[l].classList += " is-showing"
+                } else {
+                    stepsMobile[l].classList.remove("is-showing")
+                }
+            }
+        })
+    })
+}
+
+if (stepsDesktop) {
+    stepsDesktop.forEach((step, i) => {
+        step.addEventListener("mouseover", () => {
+            stepsDesktop.forEach(stepToInActivate => {
+                stepToInActivate.classList.remove("is-active")
+            })
+            if (!step.classList.contains("is-active")) step.classList += " is-active"
+            for (let j = 0; j < dots.length; j++) {
+                if (j === i) {
+                    dots[j].classList += " is-active"
+                } else {
+                    dots[j].classList.remove("is-active")
+                }
+            }
+
+            for (let k = 0; k < tutorialVideos.length; k++) {
+                if (k === i) {
+                    tutorialVideos[k].classList += " is-showing"
+                } else {
+                    tutorialVideos[k].classList.remove("is-showing")
+                }
+            }
+
+            for (let l = 0; l < stepsMobile.length; l++) {
+                if (l === i) {
+                    stepsMobile[l].classList += " is-showing"
+                } else {
+                    stepsMobile[l].classList.remove("is-showing")
+                }
+            }
+        })
+    })
+}
+
 
 const fileExtensions = ["txt", "csv", "xls", "xlsx", "docx", "pdf", "sas", "spss", "stata", "htm", "html", "php", "asp"];
 let extensionIndex = 0;
@@ -286,15 +295,31 @@ const extensionElement = document.querySelector(".file-extension")
 //used to occupy same space as the absolute extension element
 const extensionDummyElement = document.querySelector(".file-extension-dummy")
 
-const swapExtension = setInterval(function () {
-    extensionElement.classList.remove("swap-out")
-    extensionElement.classList += " swap-in"
-    extensionElement.textContent = fileExtensions[extensionIndex];
-    extensionDummyElement.textContent = fileExtensions[extensionIndex];
-    if (extensionIndex === fileExtensions.length - 1) extensionIndex = 0;
-    else extensionIndex++;
+if (extensionElement) {
+    const swapExtension = setInterval(function () {
+        extensionElement.classList.remove("swap-out")
+        extensionElement.classList += " swap-in"
+        extensionElement.textContent = fileExtensions[extensionIndex];
+        extensionDummyElement.textContent = fileExtensions[extensionIndex];
+        if (extensionIndex === fileExtensions.length - 1) extensionIndex = 0;
+        else extensionIndex++;
+        setTimeout(() => {
+            extensionElement.classList.remove("swap-in")
+            extensionElement.classList += " swap-out"
+        }, 1200);
+    }, 1800);
+}
+
+//notifications on page fade out, remove
+const notifications = document.querySelectorAll(".notification")
+notifications.forEach(notification => {
+    console.log("found notification")
     setTimeout(() => {
-        extensionElement.classList.remove("swap-in")
-        extensionElement.classList += " swap-out"
-    }, 1200);
-}, 1800);
+        notification.classList += " hide"
+    }, 3000);
+    setTimeout(() => {
+        notification.remove()
+    }, 3500);
+})
+
+
