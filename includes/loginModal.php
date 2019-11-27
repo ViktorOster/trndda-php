@@ -118,7 +118,7 @@
                     <img src="./assets/trndda_logo.svg" alt="">
                     <p class="text-bigger">Auto-detect, edit and export tables in 3 clicks.</p>
                     <p>Sign up for free to start detecting, editing and exporting tables</p>
-                    <p class="text-small">You accept our <a href="#">Terms and Conditions</a> by creating your
+                    <p class="text-small">You accept our <a href="/terms.php">Terms and Conditions</a> by creating your
                         account.</p>
                 </div>
                 <div class="modal__right-content">

@@ -5,8 +5,8 @@
                 <li data-js="tutorial-link">Tutorial</li>
                 <li data-js="about-link">About</li>
                 <li data-js="contact-link">Contact</li>
-                <li><a href="http://www.trndda.com/terms.php">Terms</a></li>
-                <li><a href="http://www.trndda.com/privacy.php">Privacy Policy</a></li>
+                <li><a href="/terms.php">Terms</a></li>
+                <li><a href="/privacy.php">Privacy Policy</a></li>
             </ul>
 
             <div class="social-links">
