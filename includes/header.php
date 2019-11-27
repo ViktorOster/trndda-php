@@ -83,10 +83,10 @@
             <li data-js="about-link">About</li>
             <li data-js="contact-link">Contact</li>
             <?php 
-            if($_SESSION['logged']==true) { 
+            if(isset($_SESSION['logged']) && $_SESSION['logged']==true) { 
                 echo "<li class='link-login'><a href='logout.php'>Logout</a></li>";
             } 
-            elseif($_SESSION['logged']==false) {
+            elseif(!isset($_SESSION['logged']) || $_SESSION['logged']==false) {
                 echo '
                 <li class="link-login show-signIn-signUp-modal show-signIn">Login</li>
                 <li class="link-signup show-signIn-signUp-modal show-signUp">Sign up free</li>

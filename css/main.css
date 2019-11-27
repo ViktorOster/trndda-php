@@ -989,12 +989,29 @@ button {
 }
   
 .tp-content {
-    height: calc(100vh - 144px);
+    height: calc(100vh - 133px);
     overflow-y: scroll;
     padding: 2rem 1rem;
 }
 .tp-content table {
     width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+    .container.container--terms {
+        max-width: 100%;
+    }
+    .left-menu {
+        width: 180px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .container.container--terms {
+        display: block;
+    }
+    .left-menu {
+        display: none;
+    }
 }
 
   
