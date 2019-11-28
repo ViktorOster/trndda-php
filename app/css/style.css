@@ -1,0 +1,391 @@
+/* TRNDDA APP */
+.shiny-output-error{ 
+visibility: hidden; 
+}
+
+
+.shiny-output-error:before{ 
+visibility: hidden; 
+}
+
+
+.shiny-file-input-progress{
+display: none
+}
+
+
+.dt-buttons{
+left:15px;
+top:-5px;
+}
+
+
+.container-fluid{
+position: absolute;
+top: 10px;
+left: 0;
+width: 94%;
+}
+
+
+#login_div{
+position: absolute; 
+top: 100px;
+width: 35%;
+left: 480px
+}
+
+
+#loginfailed_div{
+color:red;
+}
+
+
+#logininfo_div{
+position: absolute; 
+top: 295px;
+width: 75%;
+left: 20px
+}
+
+
+/*#logo_div{
+position: absolute; 
+top: 100px; 
+left: 833px;
+}*/
+
+
+#headwrapper_div{
+display:block;
+width: 100%
+}
+
+
+#tbwrapper_div{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 70px
+}
+
+
+#inTabset{
+position: absolute; 
+top: 5px; 
+left: 12px; 
+width: 106%
+}
+
+
+#fltxtOutput{
+position: absolute; 
+top: 16px; 
+left: 300px; 
+width: 18%;
+}
+
+
+#wbtxtOutput{
+position: absolute; 
+top: 16px; 
+left: 300px; 
+width: 18%;
+}
+
+
+#flnumInput{
+position: absolute; 
+top: -14px; 
+left: 520px; 
+width: 4.5%;
+z-index: 1;
+}
+
+
+#wbnumInput{
+position: absolute; 
+top: -14px; 
+left: 520px; 
+width: 4.5%;
+z-index: 1;
+}
+
+
+#fltxt_no{
+display: none;
+}
+
+
+#wbtxt_no{
+display: none;
+}
+
+
+#img_div{
+position: absolute; 
+top: 170px; 
+left: 410px;
+z-index: -1;
+}
+
+
+#file_div{
+position: absolute; 
+top: 6px; 
+left: 620px; 
+width: 60%;
+}
+
+
+#ferrmsg{
+position: absolute; 
+top: 45px; 
+left: 620px;
+font-size: 12px;
+color: red;
+width: 25%;
+}
+
+
+#uerrmsg{
+position: absolute; 
+top: 45px; 
+left: 590px;
+font-size: 12px;
+color: red;
+width: 25%;
+}
+
+
+#url-link_div{
+position: absolute; 
+top: 6px; 
+left: 795px; 
+width: 60%;
+}
+
+
+#selcat_div{
+position: absolute; 
+top: 6px; 
+left: 630px; 
+width: 10%;
+z-index:1;
+}
+
+
+#tboutput_div{
+position: absolute; 
+font-size: 85%; 
+left: 110px; 
+width: 90%; 
+top: 70px;
+}
+
+
+#togEdit_div{
+position: absolute;
+display: none;
+top: 2px; 
+left: 875px;
+z-index: 2;
+}
+
+
+.tabbable > .nav > .dropdown  li[class=active]    > a{
+background-color: #1B6453; 
+color:white;
+}
+
+
+li a{
+color: #1B6453;
+}
+
+
+#modal-tab{
+position: relative;
+overflow:auto;
+height:700px;
+top: 55px; 
+left: 10px;
+background-color: white;
+z-index: 2;
+}
+
+
+
+/* TRNDDA WEBSITE NAVIGATION MENU */
+/* Header */
+.header {
+	background-color: #034236;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 10%;
+}
+
+
+.header-logo {
+	position: absolute;
+	top: 11px;
+	left: 18px;
+	width: 9.65%;
+	height: 82.5%;
+}
+
+
+.header-homeicon {
+	position: absolute;
+	top: 22px;
+	left: 290px;
+	width: 20px;	
+	height: 20px;
+}
+
+
+.header-aboutus-php {
+	position: absolute;
+	top: 24px;
+	left: 615px;
+	color: white;
+}
+
+
+.header-contactus-php {
+	position: absolute;
+	top: 24px;
+	left: 720px;
+	color: white;
+}
+
+
+.header-referral-php {
+	position: absolute;
+	top: 24px;
+	left: 840px;
+	color: white;
+}
+
+
+.header-tutorials-php {
+	position: absolute;
+	top: 24px;
+	left: 950px;
+	color: white;
+}
+
+
+.header-logout-php {
+	position: absolute;
+	top: 18px;
+	left: 1100px;
+	color: white;
+}
+
+
+
+/* Footer */
+.footer {
+	background-color: #034236;
+	position: absolute;
+	top: 800px;
+	left: 0;
+	width: 107%;
+	height: 60px;
+}
+
+
+.footer-copyright {
+	position: absolute;
+	top: 24px;
+	left: 440px;
+	font-size: 16px;
+	color: white;
+}
+
+
+.footer-aboutus {
+	position: absolute;
+	top: 24px;
+	left: 590px;
+	color: white;
+}
+
+
+.footer-privacy-policy {
+	position: absolute;
+	top: 24px;
+	left: 680px;
+	color: white;
+}
+
+
+.footer-terms {
+	position: absolute;
+	top: 24px;
+	left: 823px;
+	color: white;
+}
+
+
+.footer-contactus {
+	position: absolute;
+	top: 24px;
+	left: 910px;
+	color: white;
+}
+
+
+
+/* Header Links */
+.header-aboutus-php a:link {
+	font-size: 16px;
+	color: white;
+}
+
+
+.header-contactus-php a:link {
+	font-size: 16px;
+	color: white;
+}
+
+
+.header-referral-php a:link {
+	font-size: 16px;
+	color: white;
+}
+
+
+.header-tutorials-php a:link {
+	font-size: 16px;
+	color: white;
+}
+
+
+/* Footer Links */
+.footer-aboutus a:link {
+	font-size: 16px;
+	color: white;
+}
+
+
+.footer-privacy-policy a:link {
+	font-size: 16px;
+	color: white;
+}
+
+
+.footer-terms a:link {
+	font-size: 16px;
+	color: white;
+}
+
+
+.footer-contactus a:link {
+	font-size: 16px;
+	color: white;
+}

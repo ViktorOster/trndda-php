@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://35.196.187.139/ -->
+<html class="">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+  <script type="text/javascript" async="" src="./app/js/analytics.js"></script>
+  <script
+    type="application/shiny-singletons">991a9dee8b6f41039f0d48e0f3cb481dfef69248,abbc5191535f7e95ba1254171676097ac26b5edc,2581d36bc09732ee052ca2bcc5a7ae809019206f,a9ff85910fa786db424bed3e869ae3a376d1eaba,319444da740392f204483c5df0f124fd8c56ee5f</script>
+  <script
+    type="application/html-dependencies">json2[2014.02.04];jquery[3.4.1];shiny[1.4.0];shinyBS[0.61];htmlwidgets[1.5.1];datatables-css[0.0.0];datatables-binding[0.9];crosstalk[1.0.0];font-awesome[5.3.1];shinyWidgets[0.4.9];bootstrap[3.4.1]</script>
+  <script src="./app/js/json2-min.js"></script>
+  <script src="./app/js/jquery.min.js"></script>
+  <link href="./app/css/shiny.css" rel="stylesheet">
+  <script src="./app/js/shiny.min.js"></script>
+  <link href="./app/css/shinyBS.css" rel="stylesheet">
+  <script src="./app/js/shinyBS.js"></script>
+  <script src="./app/js/htmlwidgets.js"></script>
+  <link href="./app/css/datatables-crosstalk.css" rel="stylesheet">
+  <script src="./app/js/datatables.js"></script>
+  <link href="./app/css/crosstalk.css" rel="stylesheet">
+  <script src="./app/js/crosstalk.min.js"></script>
+  <link href="./app/css/all.min.css" rel="stylesheet">
+  <link href="./app/css/v4-shims.min.css" rel="stylesheet">
+  <link href="./app/css/shinyWidgets.css" rel="stylesheet">
+  <script src="./app/js/shinyWidgets-bindings.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="./app/css/bootstrap.min.css" rel="stylesheet">
+  <script src="./app/js/bootstrap.min.js"></script>
+  <script src="./app/js/html5shiv.min.js"></script>
+  <script src="./app/js/respond.min.js"></script> <!-- Global site tag (gtag.js) - Google Analytics -->
+
+  <script async="" src="./app/js/js"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-139405509-2');
+
+    $(document).on('click', 'button', function () {
+      ga('send', 'event', 'button', 'file');
+    });
+
+    $(document).on('change', 'text', function () {
+      ga('send', 'event', 'text', 'url_link');
+    });
+
+    $(document).on('click', 'button', function () {
+      ga('send', 'event', 'button', 'Go');
+    });
+
+    $(document).on('change', 'button', function () {
+      ga('send', 'event', 'Number', 'txt_no');
+    });
+
+    $(document).on('click', 'button', function () {
+      ga('send', 'event', 'button', 'resetInputs');
+    });
+
+    $(document).on('click', 'button', function () {
+      ga('send', 'event', 'button', 'logout');
+    });
+  </script>
+  <script src="./app/js/validation.js"></script>
+  <link rel="stylesheet" type="text/css" href="./app/css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1&gt;" <link="" rel="stylesheet"
+    href="assets/spinner.css">
+  <link rel="stylesheet" href="./app/css/fallback.css">
+  <link rel="stylesheet" href="./app/css/load8.css">
+  <style>
+    #spinner-1b1ef42fe4b1c2758b0499837331c327 {
+      border-top: 1.1em solid rgba(0, 153, 153, 0.2);
+      border-right: 1.1em solid rgba(0, 153, 153, 0.2);
+      border-bottom: 1.1em solid rgba(0, 153, 153, 0.2);
+      border-left: 1.1em solid #009999;
+    }
+  </style>
+  <style>
+    #spinner-1b1ef42fe4b1c2758b0499837331c327 {
+      font-size: 15px
+    }
+
+    spinner-1b1ef42fe4b1c2758b0499837331c32715
+  </style>
+  <style>
+    .btn-addon {
+      font-size: 14.5px;
+      margin: 0 0 0 0 !important;
+      display: inline-block !important;
+    }
+  </style>
+  <style>
+    #spinner-ca37c368072d5ccaacfad7c87aeb9a0c {
+      border-top: 1.1em solid rgba(0, 153, 153, 0.2);
+      border-right: 1.1em solid rgba(0, 153, 153, 0.2);
+      border-bottom: 1.1em solid rgba(0, 153, 153, 0.2);
+      border-left: 1.1em solid #009999;
+    }
+  </style>
+  <style>
+    #spinner-ca37c368072d5ccaacfad7c87aeb9a0c {
+      font-size: 15px
+    }
+
+    spinner-ca37c368072d5ccaacfad7c87aeb9a0c15
+  </style>
+  <style>
+    #spinner-e683cb264c730b38391ab99b38fa9e6a {
+      border-top: 1.1em solid rgba(0, 153, 153, 0.2);
+      border-right: 1.1em solid rgba(0, 153, 153, 0.2);
+      border-bottom: 1.1em solid rgba(0, 153, 153, 0.2);
+      border-left: 1.1em solid #009999;
+    }
+  </style>
+  <style>
+    #spinner-e683cb264c730b38391ab99b38fa9e6a {
+      font-size: 15px
+    }
+
+    spinner-e683cb264c730b38391ab99b38fa9e6a15
+  </style>
+  <style>
+    #spinner-36c217d3b5d2eaf055f3d05fa1caf1d6 {
+      border-top: 1.1em solid rgba(0, 153, 153, 0.2);
+      border-right: 1.1em solid rgba(0, 153, 153, 0.2);
+      border-bottom: 1.1em solid rgba(0, 153, 153, 0.2);
+      border-left: 1.1em solid #009999;
+    }
+  </style>
+  <style>
+    #spinner-36c217d3b5d2eaf055f3d05fa1caf1d6 {
+      font-size: 15px
+    }
+
+    spinner-36c217d3b5d2eaf055f3d05fa1caf1d615
+  </style>
+
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div id="headwrapper_div">
+      <script>$(document).ready(function () { setTimeout(function () { shinyBS.addTooltip('txt_no', 'tooltip', { 'placement': 'bottom', 'trigger': 'hover', 'title': 'Select table' }) }, 500) });</script>
+      <script>$(document).ready(function () { setTimeout(function () { shinyBS.addTooltip('Go', 'tooltip', { 'placement': 'bottom', 'trigger': 'hover', 'title': 'Ensure you select a category' }) }, 500) });</script>
+      <script>$(document).ready(function () { setTimeout(function () { shinyBS.addTooltip('dat_tbl', 'tooltip', { 'placement': 'top', 'trigger': 'hover', 'title': 'Double click cells to make editable' }) }, 500) });</script>
+      <script>$(document).ready(function () { setTimeout(function () { shinyBS.addTooltip('dat_tbl2', 'tooltip', { 'placement': 'top', 'trigger': 'hover', 'title': 'Double click cells to make editable' }) }, 500) });</script>
+      <script>$(document).ready(function () { setTimeout(function () { shinyBS.addTooltip('dat_tbl3', 'tooltip', { 'placement': 'top', 'trigger': 'hover', 'title': 'Double click cells to make editable' }) }, 500) });</script>
+      <div id="img_div">
+        <img src="./app/web_illustration_2-03.jpg" width="75%" height="75%">
+      </div>
+      <div class="tabbable">
+        <ul class="nav nav-tabs shiny-tab-input shiny-bound-input" id="inTabset" data-tabsetid="4119">
+          <li class="dropdown">
+            <a href="http://35.196.187.139/#" class="dropdown-toggle" data-toggle="dropdown" data-value="Extractors">
+              Extractors
+              <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu" data-tabsetid="6266">
+              <li>
+                <a href="http://35.196.187.139/#tab-6266-1" data-toggle="tab" data-value="File Extractor">File
+                  Extractor</a>
+              </li>
+              <li>
+                <a href="http://35.196.187.139/#tab-6266-2" data-toggle="tab" data-value="Web Extractor">Web
+                  Extractor</a>
+              </li>
+            </ul>
+          </li>
+          <li class="active">
+            <a href="http://35.196.187.139/#tab-4119-2" data-toggle="tab" data-value="Tutorials">Tutorials</a>
+          </li>
+        </ul>
+        <div class="tab-content" data-tabsetid="4119">
+          <div class="tab-pane" data-value="File Extractor" id="tab-6266-1">
+            <div id="fltxtOutput">
+              <div id="fltable_no" class="shiny-text-output shiny-bound-output"></div>
+            </div>
+            <div id="flnumInput">
+              <div class="form-group shiny-input-container">
+                <label class="control-label" for="fltxt_no"></label>
+                <input id="fltxt_no" type="number" class="form-control shiny-bound-input" value="0">
+              </div>
+            </div>
+            <div id="file_div">
+              <div class="form-group shiny-input-container">
+                <label class="control-label shiny-label-null" for="file"></label>
+                <div class="input-group">
+                  <label class="input-group-btn">
+                    <span class="btn btn-default btn-file">
+                      Browse...
+                      <input id="file" name="file" type="file" style="display: none;" class="shiny-bound-input">
+                    </span>
+                  </label>
+                  <input type="text" class="form-control" placeholder="No file selected" readonly="readonly">
+                </div>
+                <div id="file_progress" class="progress progress-striped active shiny-file-input-progress">
+                  <div class="progress-bar"></div>
+                </div>
+              </div>
+            </div>
+            <div id="tboutput_div">
+              <script src="./app/js/spinner.js"></script>
+              <div class="shiny-spinner-output-container">
+                <div class="load-container load8">
+                  <div id="spinner-1b1ef42fe4b1c2758b0499837331c327" class="loader">Loading...</div>
+                </div>
+                <div style="height:400px" class="shiny-spinner-placeholder"></div>
+                <div id="dat_tbl" style="width:100%; height:auto; "
+                  class="datatables html-widget html-widget-output shiny-bound-output" data-original-title="" title="">
+                </div>
+              </div>
+            </div>
+            <div id="ferrmsg"></div>
+          </div>
+          <div class="tab-pane" data-value="Web Extractor" id="tab-6266-2">
+            <div id="wbtxtOutput">
+              <div id="wbtable_no" class="shiny-text-output shiny-bound-output"></div>
+            </div>
+            <div id="wbnumInput">
+              <div class="form-group shiny-input-container">
+                <label class="control-label" for="wbtxt_no"></label>
+                <input id="wbtxt_no" type="number" class="form-control shiny-bound-input" value="0">
+              </div>
+            </div>
+            <div id="url-link_div">
+              <div class="form-group shiny-input-container">
+                <label class="control-label" for="url_link">NA</label>
+                <input id="url_link" type="text" class="form-control" value="" placeholder="Enter URL">
+              </div>
+            </div>
+            <div id="selcat_div">
+              <div class="form-group shiny-input-container">
+                <label class="control-label" for="selcat">NA</label>
+                <div>
+                  <select id="selcat" class="form-control shiny-bound-input" data-original-title="" title="">
+                    <option value="" selected="">Select a category</option>
+                    <option value="Aerospace">Aerospace</option>
+                    <option value="Agriculture &amp; Forestry">Agriculture &amp; Forestry</option>
+                    <option value="Big Data">Big Data</option>
+                    <option value="Food &amp; Beverages">Food &amp; Beverages</option>
+                    <option value="Maritime, Fishing &amp; Aquaculture">Maritime, Fishing &amp; Aquaculture</option>
+                    <option value="Commerce">Commerce</option>
+                    <option value="Construction">Construction</option>
+                    <option value="Culture">Culture</option>
+                    <option value="Data Science">Data Science</option>
+                    <option value="Defense">Defense</option>
+                    <option value="Economics">Economics</option>
+                    <option value="Education">Education</option>
+                    <option value="Energy">Energy</option>
+                    <option value="Engineering">Engineering</option>
+                    <option value="Entertainment">Entertainment</option>
+                    <option value="Fashion">Fashion</option>
+                    <option value="Finance">Finance</option>
+                    <option value="Health">Health</option>
+                    <option value="History">History</option>
+                    <option value="Hospitality">Hospitality</option>
+                    <option value="Information Management">Information Management</option>
+                    <option value="Information Technology">Information Technology</option>
+                    <option value="Law">Law</option>
+                    <option value="Lifestyle">Lifestyle</option>
+                    <option value="Manufacturing">Manufacturing</option>
+                    <option value="Marketing &amp; Sales">Marketing &amp; Sales</option>
+                    <option value="Media">Media</option>
+                    <option value="Mining">Mining</option>
+                    <option value="Music">Music</option>
+                    <option value="News">News</option>
+                    <option value="Oil &amp; Gas">Oil &amp; Gas</option>
+                    <option value="Open Data">Open Data</option>
+                    <option value="Other">Other</option>
+                    <option value="Performing &amp; Visual Arts">Performing &amp; Visual Arts</option>
+                    <option value="Pharmaceutical">Pharmaceutical</option>
+                    <option value="Power Generation, Transmission &amp; Distribution">Power Generation, Transmission
+                      &amp; Distribution</option>
+                    <option value="Renewable Energy">Renewable Energy</option>
+                    <option value="Research">Research</option>
+                    <option value="Science">Science</option>
+                    <option value="Sports &amp; Fitness">Sports &amp; Fitness</option>
+                    <option value="Sustainable Development">Sustainable Development</option>
+                    <option value="Telecommunication">Telecommunication</option>
+                    <option value="Tourism">Tourism</option>
+                    <option value="Trade">Trade</option>
+                    <option value="Transport">Transport</option>
+                    <option value="Weather &amp; Climate">Weather &amp; Climate</option>
+                    <option value="Wildlife &amp; Environment">Wildlife &amp; Environment</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div id="url-link_div">
+              <div class="form-group shiny-input-container" style="width: 450px;">
+                <div id="url_link" data-reset="TRUE" data-reset-value=""
+                  class="input-group search-text shiny-bound-input">
+                  <input id="url_link_text" style="border-radius: 0.25em 0 0 0.25em !important;" type="text"
+                    class="form-control shiny-bound-input" value="" placeholder="Enter URL">
+                  <div class="input-group-btn">
+                    <button class="btn btn-default btn-addon action-button shiny-bound-input" id="url_link_reset"
+                      type="button">
+                      <i class="fa fa-remove"></i>
+                    </button>
+                    <button class="btn btn-default btn-addon action-button shiny-bound-input" id="url_link_search"
+                      type="button" disabled="">
+                      <i class="fa fa-search"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="tboutput_div">
+              <div class="shiny-spinner-output-container">
+                <div class="load-container load8">
+                  <div id="spinner-ca37c368072d5ccaacfad7c87aeb9a0c" class="loader">Loading...</div>
+                </div>
+                <div style="height:400px" class="shiny-spinner-placeholder"></div>
+                <div id="dat_tbl2" style="width:100%; height:auto; "
+                  class="datatables html-widget html-widget-output shiny-bound-output" data-original-title="" title="">
+                </div>
+              </div>
+            </div>
+            <div id="tboutput_div">
+              <div class="shiny-spinner-output-container">
+                <div class="load-container load8">
+                  <div id="spinner-e683cb264c730b38391ab99b38fa9e6a" class="loader">Loading...</div>
+                </div>
+                <div style="height:400px" class="shiny-spinner-placeholder"></div>
+                <div id="dat_tbl3" style="width:100%; height:auto; "
+                  class="datatables html-widget html-widget-output shiny-bound-output" data-original-title="" title="">
+                </div>
+              </div>
+            </div>
+            <div id="tboutput_div">
+              <div class="shiny-spinner-output-container">
+                <div class="load-container load8">
+                  <div id="spinner-36c217d3b5d2eaf055f3d05fa1caf1d6" class="loader">Loading...</div>
+                </div>
+                <div style="height:400px" class="shiny-spinner-placeholder"></div>
+                <div id="dat_tbl4" style="width:100%; height:auto; "
+                  class="datatables html-widget html-widget-output shiny-bound-output"></div>
+              </div>
+            </div>
+            <div id="uerrmsg"></div>
+            <div id="table_info" class="shiny-html-output shiny-bound-output"></div>
+          </div>
+          <div class="tab-pane active" data-value="Tutorials" id="tab-4119-2">
+            <div id="modal-tab" class="">
+              <table width="760" border="0" align="center">
+                <tbody>
+                  <tr>
+                    <td>
+                      <h4 class="modal-title"
+                        style="font-size: 22px; font-weight: bold; color: green; position: relative; left: 4px">
+                        Guidelines for using Trndda app</h4>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td height="40" colspan="2" align="justify" style="border: none; padding: 5px; padding-top: 10px">
+                      Our automatic table detection web app enables you to edit and extracts tables from documents in
+                      real time. All it takes is three clicks reducing the time and effort going combing through volumes
+                      of pages to extract tables from hours to seconds. Tables can be extracted from local files using
+                      our file extractor or from the web using our web extractor.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td height="20" colspan="2" align="justify" style="border: none; padding: 5px; padding-top: 5px">
+                      Currently, the application can extract tables from txt, csv, xls, xlsx, docx, pdf, sas, spss,
+                      stata, htm, html, php and asp file types. </td>
+                  </tr>
+                  <tr>
+                    <td height="20" colspan="2" align="justify" style="border: none; padding: 5px; padding-top: 10px; font-size: 18px; 
+                font-weight: bold; color: forestgreen">Demo</td>
+                  </tr>
+                  <tr>
+                    <td height="20" colspan="2" align="center" style="border: none; padding: 5px; padding-top: 10px; font-size: 18px; 
+                font-weight: bold; color: forestgreen">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/YpeI8dYvJl8" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td height="20" colspan="2" align="justify" style="border: none; padding: 5px; padding-top: 10px; font-size: 18px; 
+                font-weight: bold; color: forestgreen">Steps</td>
+                  </tr>
+                  <tr>
+                    <td height="20" colspan="2" align="justify" style="border: none; padding: 5px; padding-top: 5px">
+                      <b>1. </b> Go to the Trndda website and create an account at http://www.trndda.com/signup.php</td>
+                  </tr>
+                  <tr>
+                    <td height="20" colspan="2" align="justify" style="border: none; padding: 5px; padding-top: 5px">
+                      <b>2. </b> If you are facing difficulty submitting the registration form, clear your browser cache
+                      and try again. Updating you web browser or using an alternative browser can also help to resolve
+                      the issue.</td>
+                  </tr>
+                  <tr>
+                    <td height="20" colspan="2" align="justify" style="border: none; padding: 5px; padding-top: 5px">
+                      <b>3. </b> Activate your account with the email confirmation link.</td>
+                  </tr>
+                  <tr>
+                    <td height="20" colspan="2" align="justify" style="border: none; padding: 5px; padding-top: 5px">
+                      <b>4. </b> If you do not receive an email confirmation in your inbox kindly check you spam or junk
+                      mail. If you still cannot locate you
+                      confirmation email then contact the support team at trndda2015@gmail.com and you will be attended
+                      to promptly.</td>
+                  </tr>
+                  <tr>
+                    <td height="20" colspan="2" align="justify" style="border: none; padding: 5px; padding-top: 5px">
+                      <b>5. </b> Login into your account and select the "Start now" button on the home page. </td>
+                  </tr>
+                  <tr>
+                    <td height="20" colspan="2" align="justify" style="border: none; padding: 5px; padding-top: 5px">
+                      <b>6. </b> If for example you have a word document (docx file type) that contains tables on your
+                      computer, click on the browse button and upload the file. The number of tables detected will be
+                      displayed like this "[Number of tables] table(s) detected. Select table". Select the table number
+                      from the number field next to it. If you select table one, table one will load.</td>
+                  </tr>
+                  <tr>
+                    <td height="20" colspan="2" align="justify" style="border: none; padding: 5px; padding-top: 5px">
+                      <b>7. </b> To edit, double click any cell from the selected table and modify the value as desired.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td height="20" colspan="2" align="justify" style="border: none; padding: 5px; padding-top: 5px">
+                      <b>8. </b> Use the copy button to copy the selected table to the clipboard or use the download
+                      button to download the selected table as a csv file or excel file.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+</body>
+
+</html>
