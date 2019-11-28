@@ -12,10 +12,23 @@ pre.shiny-text-output.noplaceholder:empty {
   height: 0;
 }
 
+.option-bar {
+  display: flex;
+  border-bottom: 1px solid lightgray;
+}
+
+/* Some browsers (like Safari) will wrap text in <pre> tags with Bootstrap's
+   CSS. This changes the behavior to not wrap.
+*/
+pre.shiny-text-output {
+  word-wrap: normal;
+}
+
 .shiny-image-output img.shiny-scalable, .shiny-plot-output img.shiny-scalable {
   max-width: 100%;
   max-height: 100%;
 }
+
 
 #shiny-disconnected-overlay {
   position: fixed;
@@ -28,6 +41,9 @@ pre.shiny-text-output.noplaceholder:empty {
   overflow: hidden;
   z-index: 99998;
   pointer-events: none;
+
+  /* TODO: remove this in production, testing only */
+  display: none;
 }
 
 .table.shiny-table > thead > tr > th,
@@ -207,6 +223,10 @@ pre.shiny-text-output.noplaceholder:empty {
 
 .shiny-progress-notification .progress-text .progress-detail {
   font-size: 80%;
+}
+
+.shiny-label-null {
+  display: none;
 }
 
 .crosshair {

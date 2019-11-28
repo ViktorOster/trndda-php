@@ -1,198 +1,147 @@
 <!DOCTYPE html>
-<!-- saved from url=(0020) -->
-<html class="">
+<!-- saved from url=(0022) -->
+<html class=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <script type="text/javascript" async="" src="./app/js/analytics.js"></script><script type="application/shiny-singletons">991a9dee8b6f41039f0d48e0f3cb481dfef69248,abbc5191535f7e95ba1254171676097ac26b5edc,2581d36bc09732ee052ca2bcc5a7ae809019206f,a9ff85910fa786db424bed3e869ae3a376d1eaba,319444da740392f204483c5df0f124fd8c56ee5f</script>
+  <script type="application/html-dependencies">json2[2014.02.04];jquery[3.4.1];shiny[1.4.0];shinyBS[0.61];htmlwidgets[1.5.1];datatables-css[0.0.0];datatables-binding[0.9];crosstalk[1.0.0];font-awesome[5.3.1];shinyWidgets[0.4.9];bootstrap[3.4.1]</script>
+<script src="./app/js/json2-min.js"></script>
+<script src="./app/js/jquery.min.js"></script>
+<link href="./app/css/shiny.css" rel="stylesheet">
+<script src="./app/js/shiny.min.js"></script>
+<link href="./app/css/shinyBS.css" rel="stylesheet">
+<script src="./app/js/shinyBS.js"></script>
+<script src="./app/js/htmlwidgets.js"></script>
+<link href="./app/css/datatables-crosstalk.css" rel="stylesheet">
+<script src="./app/js/datatables.js"></script>
+<link href="./app/css/crosstalk.css" rel="stylesheet">
+<script src="./app/js/crosstalk.min.js"></script>
+<link href="./app/css/all.min.css" rel="stylesheet">
+<link href="./app/css/v4-shims.min.css" rel="stylesheet">
+<link href="./app/css/shinyWidgets.css" rel="stylesheet">
+<script src="./app/js/shinyWidgets-bindings.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="./app/css/bootstrap.min.css" rel="stylesheet">
+<script src="./app/js/bootstrap.min.js"></script>
+<script src="./app/js/html5shiv.min.js"></script>
+<script src="./app/js/respond.min.js"></script>  <!-- Global site tag (gtag.js) - Google Analytics -->
 
+<script async="" src="./app/js/js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-  <!-- <script type="text/javascript" async="" src="./analytics.js.download"></script> -->
-  <script
-    type="application/shiny-singletons">5e0f88febb86f96c0520e14c578ee14ba67872b6,abbc5191535f7e95ba1254171676097ac26b5edc,93265af5ae8b86889d094456aadbb722300d9aeb,1a65c7a77c8707958a280171779e734c80eced25</script>
-  <script
-    type="application/html-dependencies">json2[2014.02.04];jquery[1.12.4];shiny[1.3.2];shinyBS[0.61];htmlwidgets[1.3];datatables-css[0.0.0];datatables-binding[0.7];crosstalk[1.0.0];bootstrap[3.3.7]</script>
-  <script src="./js/json2-min.js"></script>
-  <script src="./js/jquery.min.js"></script>
-  <link href="./css/shiny.css" rel="stylesheet">
-  <script src="./js/shiny.min.js"></script>
-  <link href="./css/shinyBS.css" rel="stylesheet">
-  <script src="./js/shinyBS.js"></script>
-  <script src="./js/htmlwidgets.js"></script>
-  <link href="./css/datatables-crosstalk.css" rel="stylesheet">
-  <script src="./js/datatables.js"></script>
-  <link href="./css/crosstalk.css" rel="stylesheet">
-  <script src="./js/crosstalk.min.js"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="./css/bootstrap.min(1).css" rel="stylesheet">
-  <script src="./js/bootstrap.min(1).js"></script>
-  <script src="./js/html5shiv.min.js"></script>
-  <script src="./js/respond.min.js"></script> <!-- Global site tag (gtag.js) - Google Analytics -->
+  gtag('config', 'UA-139405509-2');
 
-  <script async="" src="./js"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+  $(document).on('click', 'button', function() {
+    ga('send', 'event', 'button', 'file');
+  });
+  
+  $(document).on('change', 'text', function() {
+    ga('send', 'event', 'text', 'url_link');
+  });
+  
+  $(document).on('click', 'button', function() {
+    ga('send', 'event', 'button', 'Go');
+  });
 
-    gtag('config', 'UA-139405509-2');
+  $(document).on('change', 'button', function() {
+    ga('send', 'event', 'Number', 'txt_no');
+  });
 
-    $(document).on('click', 'button', function () {
-      ga('send', 'event', 'button', 'file');
-    });
-
-    $(document).on('change', 'text', function () {
-      ga('send', 'event', 'text', 'url_link');
-    });
-
-    $(document).on('click', 'button', function () {
-      ga('send', 'event', 'button', 'Go');
-    });
-
-    $(document).on('change', 'button', function () {
-      ga('send', 'event', 'Number', 'txt_no');
-    });
-
-    $(document).on('click', 'button', function () {
-      ga('send', 'event', 'button', 'resetInputs');
-    });
-
-    $(document).on('click', 'button', function () {
-      ga('send', 'event', 'button', 'logout');
-    });
+  $(document).on('click', 'button', function() {
+    ga('send', 'event', 'button', 'resetInputs');
+  });
+  
+  $(document).on('click', 'button', function() {
+    ga('send', 'event', 'button', 'logout');
+  });
   </script>
-  <script src="./js/validation.js"></script>
-  <link rel="stylesheet" type="text/css" href="./css/app-style.css">
-  <link rel="stylesheet" href="./css/spinner.css">
-  <link rel="stylesheet" href="./css/fallback.css">
-  <link rel="stylesheet" href="./css/load8.css">
-  <style>
-    #spinner-5148cf821fbbd957ca42f01b93fad446 {
-      border-top: 1.1em solid rgba(27, 100, 83, 0.2);
-      border-right: 1.1em solid rgba(27, 100, 83, 0.2);
-      border-bottom: 1.1em solid rgba(27, 100, 83, 0.2);
-      border-left: 1.1em solid #1B6453;
-    }
-  </style>
-  <style>
-    #spinner-5148cf821fbbd957ca42f01b93fad446 {
-      font-size: 15px
-    }
+  <script src="./app/js/validation.js"></script>
+  <link rel="stylesheet" type="text/css" href="./app/css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1&gt;" <link="" rel="stylesheet" href="assets/spinner.css">
+  <link rel="stylesheet" href="./app/css/fallback.css">
+  <link rel="stylesheet" href="./app/css/load8.css">
+  <style>#spinner-1b1ef42fe4b1c2758b0499837331c327 {
+      border-top: 1.1em solid rgba(0,153,153, 0.2);
+      border-right: 1.1em solid rgba(0,153,153, 0.2);
+      border-bottom: 1.1em solid rgba(0,153,153, 0.2);
+      border-left: 1.1em solid #009999;
+}</style>
+  <style>#spinner-1b1ef42fe4b1c2758b0499837331c327 {font-size: 15px}spinner-1b1ef42fe4b1c2758b0499837331c32715</style>
+  <style>.btn-addon{font-size:14.5px;margin:0 0 0 0 !important;display: inline-block !important;}</style>
+  <style>#spinner-ca37c368072d5ccaacfad7c87aeb9a0c {
+      border-top: 1.1em solid rgba(0,153,153, 0.2);
+      border-right: 1.1em solid rgba(0,153,153, 0.2);
+      border-bottom: 1.1em solid rgba(0,153,153, 0.2);
+      border-left: 1.1em solid #009999;
+}</style>
+  <style>#spinner-ca37c368072d5ccaacfad7c87aeb9a0c {font-size: 15px}spinner-ca37c368072d5ccaacfad7c87aeb9a0c15</style>
+  <style>#spinner-e683cb264c730b38391ab99b38fa9e6a {
+      border-top: 1.1em solid rgba(0,153,153, 0.2);
+      border-right: 1.1em solid rgba(0,153,153, 0.2);
+      border-bottom: 1.1em solid rgba(0,153,153, 0.2);
+      border-left: 1.1em solid #009999;
+}</style>
+  <style>#spinner-e683cb264c730b38391ab99b38fa9e6a {font-size: 15px}spinner-e683cb264c730b38391ab99b38fa9e6a15</style>
+  <style>#spinner-36c217d3b5d2eaf055f3d05fa1caf1d6 {
+      border-top: 1.1em solid rgba(0,153,153, 0.2);
+      border-right: 1.1em solid rgba(0,153,153, 0.2);
+      border-bottom: 1.1em solid rgba(0,153,153, 0.2);
+      border-left: 1.1em solid #009999;
+}</style>
+  <style>#spinner-36c217d3b5d2eaf055f3d05fa1caf1d6 {font-size: 15px}spinner-36c217d3b5d2eaf055f3d05fa1caf1d615</style>
 
-    spinner-5148cf821fbbd957ca42f01b93fad44615
-  </style>
-  <style>
-    #spinner-aca0ca8dfaa56aa884eba8244019484c {
-      border-top: 1.1em solid rgba(27, 100, 83, 0.2);
-      border-right: 1.1em solid rgba(27, 100, 83, 0.2);
-      border-bottom: 1.1em solid rgba(27, 100, 83, 0.2);
-      border-left: 1.1em solid #1B6453;
-    }
-  </style>
-  <style>
-    #spinner-aca0ca8dfaa56aa884eba8244019484c {
-      font-size: 15px
-    }
-
-    spinner-aca0ca8dfaa56aa884eba8244019484c15
-  </style>
-  <style>
-    #spinner-be08d6b277f9d4d6a783ce45f38dbd69 {
-      border-top: 1.1em solid rgba(27, 100, 83, 0.2);
-      border-right: 1.1em solid rgba(27, 100, 83, 0.2);
-      border-bottom: 1.1em solid rgba(27, 100, 83, 0.2);
-      border-left: 1.1em solid #1B6453;
-    }
-  </style>
-  <style>
-    #spinner-be08d6b277f9d4d6a783ce45f38dbd69 {
-      font-size: 15px
-    }
-
-    spinner-be08d6b277f9d4d6a783ce45f38dbd6915
-  </style>
-  <style>
-    #spinner-4e8d58f9c57e6a01834c333299599454 {
-      border-top: 1.1em solid rgba(27, 100, 83, 0.2);
-      border-right: 1.1em solid rgba(27, 100, 83, 0.2);
-      border-bottom: 1.1em solid rgba(27, 100, 83, 0.2);
-      border-left: 1.1em solid #1B6453;
-    }
-  </style>
-  <style>
-    #spinner-4e8d58f9c57e6a01834c333299599454 {
-      font-size: 15px
-    }
-
-    spinner-4e8d58f9c57e6a01834c33329959945415
-  </style>
-
-  <link rel="stylesheet" type="text/css" href="./css/jquery.dataTables.min.css">
-  <link rel="stylesheet" type="text/css" href="./css/jquery.dataTables.extra.css">
-  <script src="./js/jquery.dataTables.min.js"></script>
-  <script src="./js/jszip.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="./css/buttons.dataTables.min.css">
-  <script src="./js/dataTables.buttons.min.js"></script>
-  <script src="./js/buttons.flash.min.js"></script>
-  <script src="./js/buttons.html5.min.js"></script>
-  <script src="./js/buttons.colVis.min.js"></script>
-  <script src="./js/buttons.print.min.js"></script>
-</head>
+<link rel="stylesheet" type="text/css" href="./app/css/jquery.dataTables.min.css"><link rel="stylesheet" type="text/css" href="./app/css/jquery.dataTables.extra.css"><script src="./app/js/jquery.dataTables.min.js"></script><script src="./app/js/jszip.min.js"></script><link rel="stylesheet" type="text/css" href="./app/css/buttons.dataTables.min.css"><script src="./app/js/dataTables.buttons.min.js"></script><script src="./app/js/buttons.flash.min.js"></script><script src="./app/js/buttons.html5.min.js"></script><script src="./app/js/buttons.colVis.min.js"></script><script src="./app/js/buttons.print.min.js"></script></head>
 
 <body>
   <div class="container-fluid">
-    <div id="login_div" style="display: none;">
-      <div class="well">
-        <img src="./assets/trndda_logo.svg" width="23%" height="23%" align="right">
-        <br>
-        <h3 align="center">Login</h3>
-        <div class="form-group shiny-input-container">
-          <label for="userName">Username</label>
-          <input id="userName" type="text" class="form-control shiny-bound-input" value="">
-        </div>
-        <div class="form-group shiny-input-container">
-          <label for="email">Email</label>
-          <input id="email" type="text" class="form-control shiny-bound-input" value="">
-        </div>
-        <button id="button_login" type="button" class="btn btn-default action-button shiny-bound-input">Login</button>
-        <br>
-        <div id="logininfo_div">
-          <span class="help-block" style="color: grey">Use same details you used to create Trndda account.</span>
-        </div>
-        <hr>
-        <div id="loginfailed_div">
-          <div id="verification_result" class="shiny-text-output shiny-bound-output"></div>
-        </div>
+    <div id="headwrapper_div">
+      <script>$(document).ready(function() {setTimeout(function() {shinyBS.addTooltip('txt_no', 'tooltip', {'placement': 'bottom', 'trigger': 'hover', 'title': 'Select table'})}, 500)});</script>
+      <script>$(document).ready(function() {setTimeout(function() {shinyBS.addTooltip('Go', 'tooltip', {'placement': 'bottom', 'trigger': 'hover', 'title': 'Ensure you select a category'})}, 500)});</script>
+      <script>$(document).ready(function() {setTimeout(function() {shinyBS.addTooltip('dat_tbl', 'tooltip', {'placement': 'top', 'trigger': 'hover', 'title': 'Double click cells to make editable'})}, 500)});</script>
+      <script>$(document).ready(function() {setTimeout(function() {shinyBS.addTooltip('dat_tbl2', 'tooltip', {'placement': 'top', 'trigger': 'hover', 'title': 'Double click cells to make editable'})}, 500)});</script>
+      <script>$(document).ready(function() {setTimeout(function() {shinyBS.addTooltip('dat_tbl3', 'tooltip', {'placement': 'top', 'trigger': 'hover', 'title': 'Double click cells to make editable'})}, 500)});</script>
+      <div id="img_div">
+        <img src="./app/web_illustration_2-03.jpg" width="75%" height="75%">
       </div>
-    </div>
-    <div id="headwrapper_div" style="display: block;">
-      <script>$(document).ready(function () { setTimeout(function () { shinyBS.addTooltip('txt_no', 'tooltip', { 'placement': 'bottom', 'trigger': 'hover', 'title': 'Select table' }) }, 500) });</script>
-      <script>$(document).ready(function () { setTimeout(function () { shinyBS.addTooltip('reset', 'tooltip', { 'placement': 'bottom', 'trigger': 'hover', 'title': 'Click to reset file and url inputs' }) }, 500) });</script>
-      <script>$(document).ready(function () { setTimeout(function () { shinyBS.addTooltip('dat_tbl', 'tooltip', { 'placement': 'top', 'trigger': 'hover', 'title': 'Double click cells to make editable' }) }, 500) });</script>
-      <script>$(document).ready(function () { setTimeout(function () { shinyBS.addTooltip('dat_tbl2', 'tooltip', { 'placement': 'top', 'trigger': 'hover', 'title': 'Double click cells to make editable' }) }, 500) });</script>
-      <script>$(document).ready(function () { setTimeout(function () { shinyBS.addTooltip('dat_tbl3', 'tooltip', { 'placement': 'top', 'trigger': 'hover', 'title': 'Double click cells to make editable' }) }, 500) });</script>
-      <script>$(document).ready(function () { setTimeout(function () { shinyBS.addTooltip('dat_tbl4', 'tooltip', { 'placement': 'top', 'trigger': 'hover', 'title': 'Double click cells to make editable' }) }, 500) });</script>
       <div class="tabbable">
-
-        <div class="tabs">
-
-          <ul class="nav nav-tabs no-border shiny-tab-input shiny-bound-input" id="inTabset" data-tabsetid="7841">
-            <li>
-              <a href="#tab-7841-1" data-toggle="tab"></a>
-            </li>
-            <li>
-              <a href="#tab-7841-2" data-toggle="tab"></a>
-            </li>
-            <li class="active">
-              <a href="#tab-7841-3" data-toggle="tab" data-value="Files" aria-expanded="true">Files</a>
-            </li>
-            <li>
-              <a href="#tab-7841-4" data-toggle="tab" data-value="Web Links">Web Links</a>
-            </li>
-          </ul>
-
-          <div id="tab-7841-1">
-            <div class="tab-item" id="file_div">
+        <ul class="nav nav-tabs shiny-tab-input shiny-bound-input" id="inTabset" data-tabsetid="4590">
+          <li class="dropdown active">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-value="Extractors" aria-expanded="false">
+              Extractors
+              <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu" data-tabsetid="6602">
+              <li class="active">
+                <a href="#tab-6602-1" data-toggle="tab" data-value="File Extractor" aria-expanded="true">File Extractor</a>
+              </li>
+              <li class="">
+                <a href="#tab-6602-2" data-toggle="tab" data-value="Web Extractor" aria-expanded="false">Web Extractor</a>
+              </li>
+            </ul>
+          </li>
+          <li class="">
+            <a href="#tab-4590-2" data-toggle="tab" data-value="Tutorials" aria-expanded="false">Tutorials</a>
+          </li>
+        </ul>
+        
+        <div class="tab-content" data-tabsetid="4590">
+          <div class="tab-pane active" data-value="File Extractor" id="tab-6602-1">
+            <div id="fltxtOutput">
+              <div id="fltable_no" class="shiny-text-output shiny-bound-output"></div>
+            </div>
+            <div id="flnumInput">
               <div class="form-group shiny-input-container">
+                <label class="control-label" for="fltxt_no"></label>
+                <input id="fltxt_no" type="number" class="form-control shiny-bound-input" value="0" style="display: none;">
+              </div>
+            </div>
+            <div id="file_div">
+              
+              <div class="form-group shiny-input-container">
+                <label class="control-label shiny-label-null" for="file"></label>
                 <div class="input-group">
                   <label class="input-group-btn">
                     <span class="btn btn-default btn-file">
@@ -202,425 +151,188 @@
                   </label>
                   <input type="text" class="form-control" placeholder="No file selected" readonly="readonly">
                 </div>
-                <div id="file_progress" class="progress progress-striped shiny-file-input-progress"
-                  style="visibility: visible;">
+                <div id="file_progress" class="progress progress-striped shiny-file-input-progress" style="visibility: visible;">
                   <div class="progress-bar" style="width: 100%;">Upload complete</div>
                 </div>
               </div>
             </div>
-            <div class="tab-item" id="headertxt_div">
-              <span class="help-block" style="color: black">OR</span>
+            <div id="tboutput_div">
+              <script src="./app/js/spinner.js"></script>
+              <div class="shiny-spinner-output-container">
+                <div class="load-container load8" style="display: none;">
+                  <div id="spinner-1b1ef42fe4b1c2758b0499837331c327" class="loader">Loading...</div>
+                </div>
+                <div style="height: 400px; display: none;" class="shiny-spinner-placeholder"></div>
+                <div id="dat_tbl" style="width: 100%; height: auto; visibility: inherit;" class="datatables html-widget html-widget-output shiny-bound-output" data-original-title="" title="" aria-describedby="tooltip294385"><div id="DataTables_Table_0_wrapper" class="dataTables_wrapper no-footer"><div class="dataTables_length" id="DataTables_Table_0_length"><label>Show <select name="DataTables_Table_0_length" aria-controls="DataTables_Table_0" class=""><option value="25">25</option><option value="50">50</option><option value="100">100</option><option value="250">250</option><option value="500">500</option></select> entries</label></div><div class="dt-buttons"> <button class="dt-button buttons-copy buttons-html5" tabindex="0" aria-controls="DataTables_Table_0" type="button"><span>Copy</span></button> <button class="dt-button buttons-collection" tabindex="0" aria-controls="DataTables_Table_0" type="button" aria-haspopup="true"><span>Download</span></button> </div><div id="DataTables_Table_0_filter" class="dataTables_filter"><label>Search:<input class="input input--search" type="search" class="" placeholder="" aria-controls="DataTables_Table_0"></label></div><div id="DataTables_Table_0_processing" class="dataTables_processing" style="display: none;">Processing...</div><div class="dataTables_scroll"><div class="dataTables_scrollHead" style="overflow: hidden; position: relative; border: 0px; width: 100%;"><div class="dataTables_scrollHeadInner"><table class="display dataTable no-footer" role="grid"><thead style="background-color: rgb(27, 100, 83); color: rgb(255, 255, 255);">
+    <tr role="row"><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 107px;" aria-label=" "> </th><th class="dt-right sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 219px;" aria-label="X150: activate to sort column ascending">X150</th><th class="dt-right sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 167px;" aria-label="X4: activate to sort column ascending">X4</th><th class="dt-right sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 259px;" aria-label="setosa: activate to sort column ascending">setosa</th><th class="dt-right sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 335px;" aria-label="versicolor: activate to sort column ascending">versicolor</th><th class="dt-right sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 304px;" aria-label="virginica: activate to sort column ascending">virginica</th></tr>
+  </thead></table></div></div><div class="dataTables_scrollBody" style="position: relative; overflow: auto; width: 100%; height: 500px;"><table class="display dataTable no-footer" id="DataTables_Table_0" role="grid" aria-describedby="DataTables_Table_0_info"><thead style="background-color: rgb(27, 100, 83); color: rgb(255, 255, 255);">
+    <tr role="row" style="height: 0px;"><th class="sorting_disabled" rowspan="1" colspan="1" style="padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px; width: 107px;" aria-label=" "><div class="dataTables_sizing" style="height: 0px; overflow: hidden;"> </div></th><th class="dt-right sorting" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px; width: 219px;" aria-label="X150: activate to sort column ascending"><div class="dataTables_sizing" style="height: 0px; overflow: hidden;">X150</div></th><th class="dt-right sorting" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px; width: 167px;" aria-label="X4: activate to sort column ascending"><div class="dataTables_sizing" style="height: 0px; overflow: hidden;">X4</div></th><th class="dt-right sorting" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px; width: 259px;" aria-label="setosa: activate to sort column ascending"><div class="dataTables_sizing" style="height: 0px; overflow: hidden;">setosa</div></th><th class="dt-right sorting" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px; width: 335px;" aria-label="versicolor: activate to sort column ascending"><div class="dataTables_sizing" style="height: 0px; overflow: hidden;">versicolor</div></th><th class="dt-right sorting" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px; width: 304px;" aria-label="virginica: activate to sort column ascending"><div class="dataTables_sizing" style="height: 0px; overflow: hidden;">virginica</div></th></tr>
+  </thead>
+  
+<tbody><tr role="row" class="odd"><td>1</td><td class=" dt-right">5.1</td><td class=" dt-right">3.5</td><td class=" dt-right">1.4</td><td class=" dt-right">0.2</td><td class=" dt-right">0</td></tr><tr role="row" class="even"><td>2</td><td class=" dt-right">4.9</td><td class=" dt-right">3</td><td class=" dt-right">1.4</td><td class=" dt-right">0.2</td><td class=" dt-right">0</td></tr><tr role="row" class="odd"><td>3</td><td class=" dt-right">4.7</td><td class=" dt-right">3.2</td><td class=" dt-right">1.3</td><td class=" dt-right">0.2</td><td class=" dt-right">0</td></tr><tr role="row" class="even"><td>4</td><td class=" dt-right">4.6</td><td class=" dt-right">3.1</td><td class=" dt-right">1.5</td><td class=" dt-right">0.2</td><td class=" dt-right">0</td></tr><tr role="row" class="odd"><td>5</td><td class=" dt-right">5</td><td class=" dt-right">3.6</td><td class=" dt-right">1.4</td><td class=" dt-right">0.2</td><td class=" dt-right">0</td></tr><tr role="row" class="even"><td>6</td><td class=" dt-right">5.4</td><td class=" dt-right">3.9</td><td class=" dt-right">1.7</td><td class=" dt-right">0.4</td><td class=" dt-right">0</td></tr><tr role="row" class="odd"><td>7</td><td class=" dt-right">4.6</td><td class=" dt-right">3.4</td><td class=" dt-right">1.4</td><td class=" dt-right">0.3</td><td class=" dt-right">0</td></tr><tr role="row" class="even"><td>8</td><td class=" dt-right">5</td><td class=" dt-right">3.4</td><td class=" dt-right">1.5</td><td class=" dt-right">0.2</td><td class=" dt-right">0</td></tr><tr role="row" class="odd"><td>9</td><td class=" dt-right">4.4</td><td class=" dt-right">2.9</td><td class=" dt-right">1.4</td><td class=" dt-right">0.2</td><td class=" dt-right">0</td></tr><tr role="row" class="even"><td>10</td><td class=" dt-right">4.9</td><td class=" dt-right">3.1</td><td class=" dt-right">1.5</td><td class=" dt-right">0.1</td><td class=" dt-right">0</td></tr><tr role="row" class="odd"><td>11</td><td class=" dt-right">5.4</td><td class=" dt-right">3.7</td><td class=" dt-right">1.5</td><td class=" dt-right">0.2</td><td class=" dt-right">0</td></tr><tr role="row" class="even"><td>12</td><td class=" dt-right">4.8</td><td class=" dt-right">3.4</td><td class=" dt-right">1.6</td><td class=" dt-right">0.2</td><td class=" dt-right">0</td></tr><tr role="row" class="odd"><td>13</td><td class=" dt-right">4.8</td><td class=" dt-right">3</td><td class=" dt-right">1.4</td><td class=" dt-right">0.1</td><td class=" dt-right">0</td></tr><tr role="row" class="even"><td>14</td><td class=" dt-right">4.3</td><td class=" dt-right">3</td><td class=" dt-right">1.1</td><td class=" dt-right">0.1</td><td class=" dt-right">0</td></tr><tr role="row" class="odd"><td>15</td><td class=" dt-right">5.8</td><td class=" dt-right">4</td><td class=" dt-right">1.2</td><td class=" dt-right">0.2</td><td class=" dt-right">0</td></tr><tr role="row" class="even"><td>16</td><td class=" dt-right">5.7</td><td class=" dt-right">4.4</td><td class=" dt-right">1.5</td><td class=" dt-right">0.4</td><td class=" dt-right">0</td></tr><tr role="row" class="odd"><td>17</td><td class=" dt-right">5.4</td><td class=" dt-right">3.9</td><td class=" dt-right">1.3</td><td class=" dt-right">0.4</td><td class=" dt-right">0</td></tr><tr role="row" class="even"><td>18</td><td class=" dt-right">5.1</td><td class=" dt-right">3.5</td><td class=" dt-right">1.4</td><td class=" dt-right">0.3</td><td class=" dt-right">0</td></tr><tr role="row" class="odd"><td>19</td><td class=" dt-right">5.7</td><td class=" dt-right">3.8</td><td class=" dt-right">1.7</td><td class=" dt-right">0.3</td><td class=" dt-right">0</td></tr><tr role="row" class="even"><td>20</td><td class=" dt-right">5.1</td><td class=" dt-right">3.8</td><td class=" dt-right">1.5</td><td class=" dt-right">0.3</td><td class=" dt-right">0</td></tr><tr role="row" class="odd"><td>21</td><td class=" dt-right">5.4</td><td class=" dt-right">3.4</td><td class=" dt-right">1.7</td><td class=" dt-right">0.2</td><td class=" dt-right">0</td></tr><tr role="row" class="even"><td>22</td><td class=" dt-right">5.1</td><td class=" dt-right">3.7</td><td class=" dt-right">1.5</td><td class=" dt-right">0.4</td><td class=" dt-right">0</td></tr><tr role="row" class="odd"><td>23</td><td class=" dt-right">4.6</td><td class=" dt-right">3.6</td><td class=" dt-right">1</td><td class=" dt-right">0.2</td><td class=" dt-right">0</td></tr><tr role="row" class="even"><td>24</td><td class=" dt-right">5.1</td><td class=" dt-right">3.3</td><td class=" dt-right">1.7</td><td class=" dt-right">0.5</td><td class=" dt-right">0</td></tr><tr role="row" class="odd"><td>25</td><td class=" dt-right">4.8</td><td class=" dt-right">3.4</td><td class=" dt-right">1.9</td><td class=" dt-right">0.2</td><td class=" dt-right">0</td></tr></tbody></table></div></div><div class="dataTables_info" id="DataTables_Table_0_info" role="status" aria-live="polite">Showing 1 to 25 of 150 entries</div><div class="dataTables_paginate paging_simple_numbers" id="DataTables_Table_0_paginate"><a class="paginate_button previous disabled" aria-controls="DataTables_Table_0" data-dt-idx="0" tabindex="0" id="DataTables_Table_0_previous">Previous</a><span><a class="paginate_button current" aria-controls="DataTables_Table_0" data-dt-idx="1" tabindex="0">1</a><a class="paginate_button " aria-controls="DataTables_Table_0" data-dt-idx="2" tabindex="0">2</a><a class="paginate_button " aria-controls="DataTables_Table_0" data-dt-idx="3" tabindex="0">3</a><a class="paginate_button " aria-controls="DataTables_Table_0" data-dt-idx="4" tabindex="0">4</a><a class="paginate_button " aria-controls="DataTables_Table_0" data-dt-idx="5" tabindex="0">5</a><a class="paginate_button " aria-controls="DataTables_Table_0" data-dt-idx="6" tabindex="0">6</a></span><a class="paginate_button next" aria-controls="DataTables_Table_0" data-dt-idx="7" tabindex="0" id="DataTables_Table_0_next">Next</a></div></div></div>
+              </div>
+            </div>
+            <div id="ferrmsg"></div>
+          </div>
+          <div class="tab-pane" data-value="Web Extractor" id="tab-6602-2">
+            <div id="wbtxtOutput">
+              <div id="wbtable_no" class="shiny-text-output shiny-bound-output"></div>
+            </div>
+            <div id="wbnumInput">
+              <div class="form-group shiny-input-container">
+                <label class="control-label" for="wbtxt_no"></label>
+                <input id="wbtxt_no" type="number" class="form-control shiny-bound-input" value="0">
+              </div>
             </div>
 
-            <div class="tab-item" id="url-group">
-              <div id="url-link_div">
+            <div class="weblink-options">
+              <div id="selcat_div">
                 <div class="form-group shiny-input-container">
-                  <input id="url_link" type="text" class="form-control shiny-bound-input" value=""
-                    placeholder="Enter URL" disabled="disabled">
+                  <label class="control-label shiny-label-null" for="selcat"></label>
+                  <div>
+                    <select id="selcat" class="form-control shiny-bound-input" data-original-title="" title=""><option value="" selected="">Select a category</option>
+                    <option value="Aerospace">Aerospace</option>
+                    <option value="Agriculture &amp; Forestry">Agriculture &amp; Forestry</option>
+                    <option value="Big Data">Big Data</option>
+                    <option value="Food &amp; Beverages">Food &amp; Beverages</option>
+                    <option value="Maritime, Fishing &amp; Aquaculture">Maritime, Fishing &amp; Aquaculture</option>
+                    <option value="Commerce">Commerce</option>
+                    <option value="Construction">Construction</option>
+                    <option value="Culture">Culture</option>
+                    <option value="Data Science">Data Science</option>
+                    <option value="Defense">Defense</option>
+                    <option value="Economics">Economics</option>
+                    <option value="Education">Education</option>
+                    <option value="Energy">Energy</option>
+                    <option value="Engineering">Engineering</option>
+                    <option value="Entertainment">Entertainment</option>
+                    <option value="Fashion">Fashion</option>
+                    <option value="Finance">Finance</option>
+                    <option value="Health">Health</option>
+                    <option value="History">History</option>
+                    <option value="Hospitality">Hospitality</option>
+                    <option value="Information Management">Information Management</option>
+                    <option value="Information Technology">Information Technology</option>
+                    <option value="Law">Law</option>
+                    <option value="Lifestyle">Lifestyle</option>
+                    <option value="Manufacturing">Manufacturing</option>
+                    <option value="Marketing &amp; Sales">Marketing &amp; Sales</option>
+                    <option value="Media">Media</option>
+                    <option value="Mining">Mining</option>
+                    <option value="Music">Music</option>
+                    <option value="News">News</option>
+                    <option value="Oil &amp; Gas">Oil &amp; Gas</option>
+                    <option value="Open Data">Open Data</option>
+                    <option value="Other">Other</option>
+                    <option value="Performing &amp; Visual Arts">Performing &amp; Visual Arts</option>
+                    <option value="Pharmaceutical">Pharmaceutical</option>
+                    <option value="Power Generation, Transmission &amp; Distribution">Power Generation, Transmission &amp; Distribution</option>
+                    <option value="Renewable Energy">Renewable Energy</option>
+                    <option value="Research">Research</option>
+                    <option value="Science">Science</option>
+                    <option value="Sports &amp; Fitness">Sports &amp; Fitness</option>
+                    <option value="Sustainable Development">Sustainable Development</option>
+                    <option value="Telecommunication">Telecommunication</option>
+                    <option value="Tourism">Tourism</option>
+                    <option value="Trade">Trade</option>
+                    <option value="Transport">Transport</option>
+                    <option value="Weather &amp; Climate">Weather &amp; Climate</option>
+                    <option value="Wildlife &amp; Environment">Wildlife &amp; Environment</option></select>
+                  </div>
                 </div>
               </div>
 
-              <div id="go_div">
-                <button id="Go" type="button" class="btn btn-default action-button shiny-bound-input"
-                  disabled="disabled">Go</button>
-              </div>
-            </div>
-
-            <div class="tab-item" id="img_div">
-              <img src="./assets/images/trndda_homebk.png" width="75%" height="75%">
-            </div>
-
-            <div id="logout-resetInputs">
-              <div class="tab-item" id="logout_div">
-                <button id="logout" type="button"
-                  class="btn btn-default action-button shiny-bound-input">Logout</button>
-              </div>
-              <div class="tab-item" id="resetInputs_div">
-                <button id="resetInputs" type="button" class="btn btn-default action-button shiny-bound-input">Reset
-                  Inputs</button>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-
-        <div class="tab-content" data-tabsetid="7841">
-
-        </div>
-        <div id="tab-7841-2">
-          <div id="txtOutput">
-            <div id="table_no" class="shiny-text-output shiny-bound-output"></div>
-          </div>
-          <div id="numInput">
-            <div class="form-group shiny-input-container">
-              <label for="txt_no"></label>
-              <input id="txt_no" type="number" class="form-control shiny-bound-input" value="0" data-original-title=""
-                title="" style="display: none;">
-            </div>
-          </div>
-        </div>
-        <div class="tab-pane active" data-value="Files" id="tab-7841-3">
-          <div id="tboutput_div">
-            <script src="./js/spinner.js"></script>
-            <div class="shiny-spinner-output-container">
-              <div class="load-container load8" style="display: none;">
-                <div id="spinner-5148cf821fbbd957ca42f01b93fad446" class="loader">Loading...</div>
-              </div>
-              <div style="height: 400px; display: none;" class="shiny-spinner-placeholder"></div>
-              <div id="dat_tbl" style="width: 100%; height: auto; visibility: visible;"
-                class="datatables html-widget html-widget-output shiny-bound-output" data-original-title="" title="">
-                <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper no-footer">
-                  <div class="dataTables_length" id="DataTables_Table_0_length"><label>Show <select
-                        name="DataTables_Table_0_length" aria-controls="DataTables_Table_0" class="">
-                        <option value="25">25</option>
-                        <option value="50">50</option>
-                        <option value="100">100</option>
-                        <option value="250">250</option>
-                        <option value="500">500</option>
-                      </select> entries</label></div>
-                  <div class="dt-buttons"> <a class="dt-button buttons-copy buttons-html5" tabindex="0"
-                      aria-controls="DataTables_Table_0" href="#"><span>Copy</span></a> <a
-                      class="dt-button buttons-collection" tabindex="0" aria-controls="DataTables_Table_0"
-                      href="#"><span>Download</span></a> </div>
-                  <div id="DataTables_Table_0_filter" class="dataTables_filter"><label>Search:<input type="search"
-                        class="" placeholder="" aria-controls="DataTables_Table_0"></label></div>
-                  <div id="DataTables_Table_0_processing" class="dataTables_processing" style="display: none;">
-                    Processing...</div>
-                  <div class="dataTables_scroll">
-                    <div class="dataTables_scrollHead"
-                      style="overflow: hidden; position: relative; border: 0px; width: 100%;">
-                      <div class="dataTables_scrollHeadInner" style="box-sizing: content-box; padding-right: 17px;">
-                        <table class="display dataTable no-footer" role="grid" style="width: 100%;">
-                          <thead style="background-color: rgb(27, 100, 83); color: rgb(255, 255, 255);">
-                            <tr role="row">
-                              <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 6.09%;" aria-label=" ">
-                              </th>
-                              <th class="dt-right sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1"
-                                colspan="1" style="width: 11.29%;" aria-label="150: activate to sort column ascending">
-                                150</th>
-                              <th class="dt-right sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1"
-                                colspan="1" style="width: 7.85%;" aria-label="4: activate to sort column ascending">4
-                              </th>
-                              <th class="dt-right sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1"
-                                colspan="1" style="width: 15.97%;"
-                                aria-label="setosa: activate to sort column ascending">setosa</th>
-                              <th class="dt-right sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1"
-                                colspan="1" style="width: 20.82%;"
-                                aria-label="versicolor: activate to sort column ascending">versicolor</th>
-                              <th class="dt-right sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1"
-                                colspan="1" style="width: 18.89%;"
-                                aria-label="virginica: activate to sort column ascending">virginica</th>
-                            </tr>
-                          </thead>
-                        </table>
-                      </div>
-                    </div>
-                    <div class="dataTables_scrollBody"
-                      style="position: relative; overflow: auto; width: 100%; height: 500px;">
-                      <table class="display dataTable no-footer" id="DataTables_Table_0" role="grid"
-                        aria-describedby="DataTables_Table_0_info">
-                        <thead style="background-color: rgb(27, 100, 83); color: rgb(255, 255, 255);">
-                          <tr role="row" style="height: 0px;">
-                            <th class="sorting_disabled" rowspan="1" colspan="1"
-                              style="padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px; width: 69px;"
-                              aria-label=" ">
-                              <div class="dataTables_sizing" style="height:0;overflow:hidden;"> </div>
-                            </th>
-                            <th class="dt-right sorting" aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
-                              style="padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px; width: 128px;"
-                              aria-label="150: activate to sort column ascending">
-                              <div class="dataTables_sizing" style="height:0;overflow:hidden;">150</div>
-                            </th>
-                            <th class="dt-right sorting" aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
-                              style="padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px; width: 89px;"
-                              aria-label="4: activate to sort column ascending">
-                              <div class="dataTables_sizing" style="height:0;overflow:hidden;">4</div>
-                            </th>
-                            <th class="dt-right sorting" aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
-                              style="padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px; width: 181px;"
-                              aria-label="setosa: activate to sort column ascending">
-                              <div class="dataTables_sizing" style="height:0;overflow:hidden;">setosa</div>
-                            </th>
-                            <th class="dt-right sorting" aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
-                              style="padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px; width: 236px;"
-                              aria-label="versicolor: activate to sort column ascending">
-                              <div class="dataTables_sizing" style="height:0;overflow:hidden;">versicolor</div>
-                            </th>
-                            <th class="dt-right sorting" aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
-                              style="padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px; width: 214px;"
-                              aria-label="virginica: activate to sort column ascending">
-                              <div class="dataTables_sizing" style="height:0;overflow:hidden;">virginica</div>
-                            </th>
-                          </tr>
-                        </thead>
-
-                        <tbody>
-                          <tr role="row" class="odd">
-                            <td>1</td>
-                            <td class=" dt-right">5.1</td>
-                            <td class=" dt-right">3.5</td>
-                            <td class=" dt-right">1.4</td>
-                            <td class=" dt-right">0.2</td>
-                            <td class=" dt-right">0</td>
-                          </tr>
-                          <tr role="row" class="even">
-                            <td>2</td>
-                            <td class=" dt-right">4.9</td>
-                            <td class=" dt-right">3</td>
-                            <td class=" dt-right">1.4</td>
-                            <td class=" dt-right">0.2</td>
-                            <td class=" dt-right">0</td>
-                          </tr>
-                          <tr role="row" class="odd">
-                            <td>3</td>
-                            <td class=" dt-right">4.7</td>
-                            <td class=" dt-right">3.2</td>
-                            <td class=" dt-right">1.3</td>
-                            <td class=" dt-right">0.2</td>
-                            <td class=" dt-right">0</td>
-                          </tr>
-                          <tr role="row" class="even">
-                            <td>4</td>
-                            <td class=" dt-right">4.6</td>
-                            <td class=" dt-right">3.1</td>
-                            <td class=" dt-right">1.5</td>
-                            <td class=" dt-right">0.2</td>
-                            <td class=" dt-right">0</td>
-                          </tr>
-                          <tr role="row" class="odd">
-                            <td>5</td>
-                            <td class=" dt-right">5</td>
-                            <td class=" dt-right">3.6</td>
-                            <td class=" dt-right">1.4</td>
-                            <td class=" dt-right">0.2</td>
-                            <td class=" dt-right">0</td>
-                          </tr>
-                          <tr role="row" class="even">
-                            <td>6</td>
-                            <td class=" dt-right">5.4</td>
-                            <td class=" dt-right">3.9</td>
-                            <td class=" dt-right">1.7</td>
-                            <td class=" dt-right">0.4</td>
-                            <td class=" dt-right">0</td>
-                          </tr>
-                          <tr role="row" class="odd">
-                            <td>7</td>
-                            <td class=" dt-right">4.6</td>
-                            <td class=" dt-right">3.4</td>
-                            <td class=" dt-right">1.4</td>
-                            <td class=" dt-right">0.3</td>
-                            <td class=" dt-right">0</td>
-                          </tr>
-                          <tr role="row" class="even">
-                            <td>8</td>
-                            <td class=" dt-right">5</td>
-                            <td class=" dt-right">3.4</td>
-                            <td class=" dt-right">1.5</td>
-                            <td class=" dt-right">0.2</td>
-                            <td class=" dt-right">0</td>
-                          </tr>
-                          <tr role="row" class="odd">
-                            <td>9</td>
-                            <td class=" dt-right">4.4</td>
-                            <td class=" dt-right">2.9</td>
-                            <td class=" dt-right">1.4</td>
-                            <td class=" dt-right">0.2</td>
-                            <td class=" dt-right">0</td>
-                          </tr>
-                          <tr role="row" class="even">
-                            <td>10</td>
-                            <td class=" dt-right">4.9</td>
-                            <td class=" dt-right">3.1</td>
-                            <td class=" dt-right">1.5</td>
-                            <td class=" dt-right">0.1</td>
-                            <td class=" dt-right">0</td>
-                          </tr>
-                          <tr role="row" class="odd">
-                            <td>11</td>
-                            <td class=" dt-right">5.4</td>
-                            <td class=" dt-right">3.7</td>
-                            <td class=" dt-right">1.5</td>
-                            <td class=" dt-right">0.2</td>
-                            <td class=" dt-right">0</td>
-                          </tr>
-                          <tr role="row" class="even">
-                            <td>12</td>
-                            <td class=" dt-right">4.8</td>
-                            <td class=" dt-right">3.4</td>
-                            <td class=" dt-right">1.6</td>
-                            <td class=" dt-right">0.2</td>
-                            <td class=" dt-right">0</td>
-                          </tr>
-                          <tr role="row" class="odd">
-                            <td>13</td>
-                            <td class=" dt-right">4.8</td>
-                            <td class=" dt-right">3</td>
-                            <td class=" dt-right">1.4</td>
-                            <td class=" dt-right">0.1</td>
-                            <td class=" dt-right">0</td>
-                          </tr>
-                          <tr role="row" class="even">
-                            <td>14</td>
-                            <td class=" dt-right">4.3</td>
-                            <td class=" dt-right">3</td>
-                            <td class=" dt-right">1.1</td>
-                            <td class=" dt-right">0.1</td>
-                            <td class=" dt-right">0</td>
-                          </tr>
-                          <tr role="row" class="odd">
-                            <td>15</td>
-                            <td class=" dt-right">5.8</td>
-                            <td class=" dt-right">4</td>
-                            <td class=" dt-right">1.2</td>
-                            <td class=" dt-right">0.2</td>
-                            <td class=" dt-right">0</td>
-                          </tr>
-                          <tr role="row" class="even">
-                            <td>16</td>
-                            <td class=" dt-right">5.7</td>
-                            <td class=" dt-right">4.4</td>
-                            <td class=" dt-right">1.5</td>
-                            <td class=" dt-right">0.4</td>
-                            <td class=" dt-right">0</td>
-                          </tr>
-                          <tr role="row" class="odd">
-                            <td>17</td>
-                            <td class=" dt-right">5.4</td>
-                            <td class=" dt-right">3.9</td>
-                            <td class=" dt-right">1.3</td>
-                            <td class=" dt-right">0.4</td>
-                            <td class=" dt-right">0</td>
-                          </tr>
-                          <tr role="row" class="even">
-                            <td>18</td>
-                            <td class=" dt-right">5.1</td>
-                            <td class=" dt-right">3.5</td>
-                            <td class=" dt-right">1.4</td>
-                            <td class=" dt-right">0.3</td>
-                            <td class=" dt-right">0</td>
-                          </tr>
-                          <tr role="row" class="odd">
-                            <td>19</td>
-                            <td class=" dt-right">5.7</td>
-                            <td class=" dt-right">3.8</td>
-                            <td class=" dt-right">1.7</td>
-                            <td class=" dt-right">0.3</td>
-                            <td class=" dt-right">0</td>
-                          </tr>
-                          <tr role="row" class="even">
-                            <td>20</td>
-                            <td class=" dt-right">5.1</td>
-                            <td class=" dt-right">3.8</td>
-                            <td class=" dt-right">1.5</td>
-                            <td class=" dt-right">0.3</td>
-                            <td class=" dt-right">0</td>
-                          </tr>
-                          <tr role="row" class="odd">
-                            <td>21</td>
-                            <td class=" dt-right">5.4</td>
-                            <td class=" dt-right">3.4</td>
-                            <td class=" dt-right">1.7</td>
-                            <td class=" dt-right">0.2</td>
-                            <td class=" dt-right">0</td>
-                          </tr>
-                          <tr role="row" class="even">
-                            <td>22</td>
-                            <td class=" dt-right">5.1</td>
-                            <td class=" dt-right">3.7</td>
-                            <td class=" dt-right">1.5</td>
-                            <td class=" dt-right">0.4</td>
-                            <td class=" dt-right">0</td>
-                          </tr>
-                          <tr role="row" class="odd">
-                            <td>23</td>
-                            <td class=" dt-right">4.6</td>
-                            <td class=" dt-right">3.6</td>
-                            <td class=" dt-right">1</td>
-                            <td class=" dt-right">0.2</td>
-                            <td class=" dt-right">0</td>
-                          </tr>
-                          <tr role="row" class="even">
-                            <td>24</td>
-                            <td class=" dt-right">5.1</td>
-                            <td class=" dt-right">3.3</td>
-                            <td class=" dt-right">1.7</td>
-                            <td class=" dt-right">0.5</td>
-                            <td class=" dt-right">0</td>
-                          </tr>
-                          <tr role="row" class="odd">
-                            <td>25</td>
-                            <td class=" dt-right">4.8</td>
-                            <td class=" dt-right">3.4</td>
-                            <td class=" dt-right">1.9</td>
-                            <td class=" dt-right">0.2</td>
-                            <td class=" dt-right">0</td>
-                          </tr>
-                        </tbody>
-                      </table>
+              <div id="url-link_div">
+                <div class="form-group shiny-input-container" style="width: 450px;">
+                  <div id="url_link" data-reset="TRUE" data-reset-value="" class="input-group search-text shiny-bound-input">
+                    <input id="url_link_text" style="border-radius: 0.25em 0 0 0.25em !important;" type="text" class="form-control shiny-bound-input" value="" placeholder="Enter URL">
+                    <div class="input-group-btn">
+                      <button class="btn btn-default btn-addon action-button shiny-bound-input" id="url_link_reset" type="button">
+                        <i class="fa fa-remove"></i>
+                      </button>
+                      <button class="btn btn-default btn-addon action-button shiny-bound-input" id="url_link_search" type="button" disabled="">
+                        <i class="fa fa-search"></i>
+                      </button>
                     </div>
                   </div>
-                  <div class="dataTables_info" id="DataTables_Table_0_info" role="status" aria-live="polite">Showing 1
-                    to 25 of 150 entries</div>
-                  <div class="dataTables_paginate paging_simple_numbers" id="DataTables_Table_0_paginate"><a
-                      class="paginate_button previous disabled" aria-controls="DataTables_Table_0" data-dt-idx="0"
-                      tabindex="0" id="DataTables_Table_0_previous">Previous</a><span><a class="paginate_button current"
-                        aria-controls="DataTables_Table_0" data-dt-idx="1" tabindex="0">1</a><a class="paginate_button "
-                        aria-controls="DataTables_Table_0" data-dt-idx="2" tabindex="0">2</a><a class="paginate_button "
-                        aria-controls="DataTables_Table_0" data-dt-idx="3" tabindex="0">3</a><a class="paginate_button "
-                        aria-controls="DataTables_Table_0" data-dt-idx="4" tabindex="0">4</a><a class="paginate_button "
-                        aria-controls="DataTables_Table_0" data-dt-idx="5" tabindex="0">5</a><a class="paginate_button "
-                        aria-controls="DataTables_Table_0" data-dt-idx="6" tabindex="0">6</a></span><a
-                      class="paginate_button next" aria-controls="DataTables_Table_0" data-dt-idx="7" tabindex="0"
-                      id="DataTables_Table_0_next">Next</a></div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="tab-pane" data-value="Web Links" id="tab-7841-4">
-          <div id="tboutput_div">
-            <div class="shiny-spinner-output-container">
-              <div class="load-container load8">
-                <div id="spinner-aca0ca8dfaa56aa884eba8244019484c" class="loader">Loading...</div>
+
+            <div id="tboutput_div">
+              <div class="shiny-spinner-output-container">
+                <div class="load-container load8" style="display: none;">
+                  <div id="spinner-ca37c368072d5ccaacfad7c87aeb9a0c" class="loader">Loading...</div>
+                </div>
+                <div style="height: 400px; display: none;" class="shiny-spinner-placeholder"></div>
+                <div id="dat_tbl2" style="width: 100%; height: auto; visibility: hidden;" class="datatables html-widget html-widget-output shiny-bound-output" data-original-title="" title=""></div><div class="shiny-output-error htmlwidgets-error" style="position: absolute; top: 0px; left: 0px; max-width: 0px; height: 0px;">'' does not exist in current working directory ('/root/shinyapp').</div>
               </div>
-              <div style="height:400px" class="shiny-spinner-placeholder"></div>
-              <div id="dat_tbl2" style="width:100%; height:auto; "
-                class="datatables html-widget html-widget-output shiny-bound-output" data-original-title="" title="">
+            </div>
+            <div id="tboutput_div">
+              <div class="shiny-spinner-output-container">
+                <div class="load-container load8" style="display: none;">
+                  <div id="spinner-e683cb264c730b38391ab99b38fa9e6a" class="loader">Loading...</div>
+                </div>
+                <div style="height: 400px; display: none;" class="shiny-spinner-placeholder"></div>
+                <div id="dat_tbl3" style="width: 100%; height: auto; visibility: hidden;" class="datatables html-widget html-widget-output shiny-bound-output" data-original-title="" title=""></div>
+              </div>
+            </div>
+            <div id="tboutput_div">
+              <div class="shiny-spinner-output-container">
+                <div class="load-container load8" style="display: none;">
+                  <div id="spinner-36c217d3b5d2eaf055f3d05fa1caf1d6" class="loader">Loading...</div>
+                </div>
+                <div style="height: 400px; display: none;" class="shiny-spinner-placeholder"></div>
+                <div id="dat_tbl4" style="width: 100%; height: auto; visibility: hidden;" class="datatables html-widget html-widget-output shiny-bound-output"></div>
+              </div>
+            </div>
+            <div id="uerrmsg"></div>
+            <div id="table_info" class="shiny-html-output shiny-bound-output"></div>
+          </div>
+          <div class="tab-pane" data-value="Tutorials" id="tab-4590-2">
+            <div id="modal-tab">
+              <div class="app-tutorial-container">
+                <h1> Guidelines for using Trndda app</h1>            
+                <p>
+                  Our automatic table detection web app enables you to edit and extracts tables from documents in real time. All it takes is three clicks reducing the time and effort going combing through volumes of pages to extract tables from hours to seconds. Tables can be extracted from local files using our file extractor or from the web using our web extractor.
+                </p>
+                <p>
+                  Currently, the application can extract tables from txt, csv, xls, xlsx, docx, pdf, sas, spss, stata, htm, html, php and asp file types.
+                </p>
+                <p>
+                  
+                <h2>Demo</h2>
+
+                <iframe class="tutorial-video" src="https://www.youtube.com/embed/YpeI8dYvJl8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+               
+                <h2>Steps</h2>
+               
+                <p><b>1. </b> Go to the Trndda website and create an account at http://www.trndda.com/signup.php</p>
+               
+                <p><b>2. </b> If you are facing difficulty submitting the registration form, clear your browser cache and try again. Updating you web browser or using an alternative browser can also help to resolve the issue.</p>
+               
+                <p><b>3. </b> Activate your account with the email confirmation link.</p>
+               
+                <p><b>4. </b> If you do not receive an email confirmation in your inbox kindly check you spam or junk mail. If you still cannot locate you 
+                confirmation email then contact the support team at trndda2015@gmail.com and you will be attended to promptly.</p>
+              
+                <p><b>5. </b> Login into your account and select the "Start now" button on the home page. </p>
+               
+                <p><b>6. </b> If for example you have a word document (docx file type) that contains tables on your computer, click on the browse button and upload the file. The number of tables detected will be displayed like this "[Number of tables] table(s) detected. Select table". Select the table number from the number field next to it. If you select table one, table one will load.
+                </p>
+               
+                <p><b>7. </b> To edit, double click any cell from the selected table and modify the value as desired. </p>
+               
+                <p><b>8. </b> Use the copy button to copy the selected table to the clipboard or use the download button to download the selected table as a csv file or excel file.</p>
+    
               </div>
             </div>
           </div>
-          <div id="tboutput_div">
-            <div class="shiny-spinner-output-container">
-              <div class="load-container load8">
-                <div id="spinner-be08d6b277f9d4d6a783ce45f38dbd69" class="loader">Loading...</div>
-              </div>
-              <div style="height:400px" class="shiny-spinner-placeholder"></div>
-              <div id="dat_tbl3" style="width:100%; height:auto; "
-                class="datatables html-widget html-widget-output shiny-bound-output" data-original-title="" title="">
-              </div>
-            </div>
-          </div>
-          <div id="tboutput_div">
-            <div class="shiny-spinner-output-container">
-              <div class="load-container load8">
-                <div id="spinner-4e8d58f9c57e6a01834c333299599454" class="loader">Loading...</div>
-              </div>
-              <div style="height:400px" class="shiny-spinner-placeholder"></div>
-              <div id="dat_tbl4" style="width:100%; height:auto; "
-                class="datatables html-widget html-widget-output shiny-bound-output" data-original-title="" title="">
-              </div>
-            </div>
-          </div>
-          <div id="table_info" class="shiny-html-output shiny-bound-output"></div>
         </div>
       </div>
     </div>
   </div>
-  </div>
 
 
 
-</body>
-
-</html>
+<span style="border-radius: 3px !important; text-indent: 20px !important; width: auto !important; padding: 0px 4px 0px 0px !important; text-align: center !important; font: bold 11px/20px &quot;Helvetica Neue&quot;, Helvetica, sans-serif !important; color: rgb(255, 255, 255) !important; background: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMzBweCIgd2lkdGg9IjMwcHgiIHZpZXdCb3g9Ii0xIC0xIDMxIDMxIj48Zz48cGF0aCBkPSJNMjkuNDQ5LDE0LjY2MiBDMjkuNDQ5LDIyLjcyMiAyMi44NjgsMjkuMjU2IDE0Ljc1LDI5LjI1NiBDNi42MzIsMjkuMjU2IDAuMDUxLDIyLjcyMiAwLjA1MSwxNC42NjIgQzAuMDUxLDYuNjAxIDYuNjMyLDAuMDY3IDE0Ljc1LDAuMDY3IEMyMi44NjgsMC4wNjcgMjkuNDQ5LDYuNjAxIDI5LjQ0OSwxNC42NjIiIGZpbGw9IiNmZmYiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIxIj48L3BhdGg+PHBhdGggZD0iTTE0LjczMywxLjY4NiBDNy41MTYsMS42ODYgMS42NjUsNy40OTUgMS42NjUsMTQuNjYyIEMxLjY2NSwyMC4xNTkgNS4xMDksMjQuODU0IDkuOTcsMjYuNzQ0IEM5Ljg1NiwyNS43MTggOS43NTMsMjQuMTQzIDEwLjAxNiwyMy4wMjIgQzEwLjI1MywyMi4wMSAxMS41NDgsMTYuNTcyIDExLjU0OCwxNi41NzIgQzExLjU0OCwxNi41NzIgMTEuMTU3LDE1Ljc5NSAxMS4xNTcsMTQuNjQ2IEMxMS4xNTcsMTIuODQyIDEyLjIxMSwxMS40OTUgMTMuNTIyLDExLjQ5NSBDMTQuNjM3LDExLjQ5NSAxNS4xNzUsMTIuMzI2IDE1LjE3NSwxMy4zMjMgQzE1LjE3NSwxNC40MzYgMTQuNDYyLDE2LjEgMTQuMDkzLDE3LjY0MyBDMTMuNzg1LDE4LjkzNSAxNC43NDUsMTkuOTg4IDE2LjAyOCwxOS45ODggQzE4LjM1MSwxOS45ODggMjAuMTM2LDE3LjU1NiAyMC4xMzYsMTQuMDQ2IEMyMC4xMzYsMTAuOTM5IDE3Ljg4OCw4Ljc2NyAxNC42NzgsOC43NjcgQzEwLjk1OSw4Ljc2NyA4Ljc3NywxMS41MzYgOC43NzcsMTQuMzk4IEM4Ljc3NywxNS41MTMgOS4yMSwxNi43MDkgOS43NDksMTcuMzU5IEM5Ljg1NiwxNy40ODggOS44NzIsMTcuNiA5Ljg0LDE3LjczMSBDOS43NDEsMTguMTQxIDkuNTIsMTkuMDIzIDkuNDc3LDE5LjIwMyBDOS40MiwxOS40NCA5LjI4OCwxOS40OTEgOS4wNCwxOS4zNzYgQzcuNDA4LDE4LjYyMiA2LjM4NywxNi4yNTIgNi4zODcsMTQuMzQ5IEM2LjM4NywxMC4yNTYgOS4zODMsNi40OTcgMTUuMDIyLDYuNDk3IEMxOS41NTUsNi40OTcgMjMuMDc4LDkuNzA1IDIzLjA3OCwxMy45OTEgQzIzLjA3OCwxOC40NjMgMjAuMjM5LDIyLjA2MiAxNi4yOTcsMjIuMDYyIEMxNC45NzMsMjIuMDYyIDEzLjcyOCwyMS4zNzkgMTMuMzAyLDIwLjU3MiBDMTMuMzAyLDIwLjU3MiAxMi42NDcsMjMuMDUgMTIuNDg4LDIzLjY1NyBDMTIuMTkzLDI0Ljc4NCAxMS4zOTYsMjYuMTk2IDEwLjg2MywyNy4wNTggQzEyLjA4NiwyNy40MzQgMTMuMzg2LDI3LjYzNyAxNC43MzMsMjcuNjM3IEMyMS45NSwyNy42MzcgMjcuODAxLDIxLjgyOCAyNy44MDEsMTQuNjYyIEMyNy44MDEsNy40OTUgMjEuOTUsMS42ODYgMTQuNzMzLDEuNjg2IiBmaWxsPSIjZTYwMDIzIj48L3BhdGg+PC9nPjwvc3ZnPg==&quot;) 3px 50% / 14px 14px no-repeat rgb(230, 0, 35) !important; position: absolute !important; opacity: 1 !important; z-index: 8675309 !important; display: none; cursor: pointer !important; border: none !important; -webkit-font-smoothing: antialiased !important; top: 190px; left: 420px;">Save</span><span style="border-radius: 12px; width: 24px !important; height: 24px !important; background: url(&quot;data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pjxzdmcgd2lkdGg9IjI0cHgiIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAwIDI0IDI0IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxkZWZzPjxtYXNrIGlkPSJtIj48cmVjdCBmaWxsPSIjZmZmIiB4PSIwIiB5PSIwIiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHJ4PSI2IiByeT0iNiIvPjxyZWN0IGZpbGw9IiMwMDAiIHg9IjUiIHk9IjUiIHdpZHRoPSIxNCIgaGVpZ2h0PSIxNCIgcng9IjEiIHJ5PSIxIi8+PHJlY3QgZmlsbD0iIzAwMCIgeD0iMTAiIHk9IjAiIHdpZHRoPSI0IiBoZWlnaHQ9IjI0Ii8+PHJlY3QgZmlsbD0iIzAwMCIgeD0iMCIgeT0iMTAiIHdpZHRoPSIyNCIgaGVpZ2h0PSI0Ii8+PC9tYXNrPjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIGZpbGw9IiNmZmYiIG1hc2s9InVybCgjbSkiLz48L3N2Zz4=&quot;) 50% 50% / 14px 14px no-repeat rgba(0, 0, 0, 0.4) !important; position: absolute !important; opacity: 1 !important; z-index: 8675309 !important; display: none; cursor: pointer !important; border: none !important; top: 190px; left: 1053px;"></span></body></html>
