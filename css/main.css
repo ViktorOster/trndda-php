@@ -958,9 +958,9 @@ button {
     display: block;
 }
 
-/* Terms page styles */
+/* Terms and privacy page styles */
 
-.container.container--terms {
+.container.container--terms-privacy {
     display: flex;
 }
 .left-menu-container {

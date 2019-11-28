@@ -1,7 +1,7 @@
 <?php include 'includes/header.php' ?>
 
 <main>
-  <div class="container container--terms">
+  <div class="container container--terms-privacy">
     <div class="left-menu-container">
       <div class="left-menu">
         <ul class="menu__nav">
